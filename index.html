@@ -10,9 +10,9 @@
 body{font-family:'Inter',sans-serif;background:#f5f5f3;color:#1a1a18;}
 .bk{max-width:880px;margin:0 auto;padding:1rem 0 3rem;}
 .nav{display:flex;gap:5px;flex-wrap:wrap;margin-bottom:1.5rem;padding:0 1rem;}
-.nb{padding:6px 11px;border-radius:20px;border:0.5px solid #d0cfc8;font-size:11px;font-weight:500;cursor:pointer;background:transparent;color:#5f5e5a;transition:all .15s;font-family:inherit;}
-.nb.active{background:#0E6F8E;color:#fff;border-color:transparent;}
-.nb:hover:not(.active){background:#f1efe8;}
+.nb{padding:7px 14px;border-radius:20px;border:1.5px solid #0E6F8E;font-size:11px;font-weight:600;cursor:pointer;background:#fff;color:#0E6F8E;transition:all .15s;font-family:inherit;box-shadow:0 1px 4px rgba(14,111,142,0.15);}
+.nb.active{background:#0E6F8E;color:#fff;border-color:#0E6F8E;box-shadow:0 2px 8px rgba(14,111,142,0.35);}
+.nb:hover:not(.active){background:#E6F7FA;color:#0A4F6A;border-color:#0A4F6A;}
 .pg{display:none;}.pg.active{display:block;}
 .sp{background:#fff;border-radius:16px;margin:0 1rem;overflow:hidden;border:0.5px solid #e0dfd8;}
 .sh{padding:32px 40px 24px;}
@@ -175,6 +175,7 @@ body{font-family:'Inter',sans-serif;background:#f5f5f3;color:#1a1a18;}
 </head>
 <body>
 <div class="bk">
+<div style="padding:0 1rem 6px;font-size:11px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:#0A4F6A;">Click here to navigate</div>
 <div class="nav">
   <button class="nb active" onclick="go('cover',this)">Cover</button>
   <button class="nb" onclick="go('exec',this)">Summary</button>
