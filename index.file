@@ -1,0 +1,825 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Lauren Mazzola · 30·60·90 Day Plan</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<style>
+*{box-sizing:border-box;margin:0;padding:0;}
+body{font-family:'Inter',sans-serif;background:#f5f5f3;color:#1a1a18;}
+.bk{max-width:880px;margin:0 auto;padding:1rem 0 3rem;}
+.nav{display:flex;gap:5px;flex-wrap:wrap;margin-bottom:1.5rem;padding:0 1rem;}
+.nb{padding:6px 11px;border-radius:20px;border:0.5px solid #d0cfc8;font-size:11px;font-weight:500;cursor:pointer;background:transparent;color:#5f5e5a;transition:all .15s;font-family:inherit;}
+.nb.active{background:#0E6F8E;color:#fff;border-color:transparent;}
+.nb:hover:not(.active){background:#f1efe8;}
+.pg{display:none;}.pg.active{display:block;}
+.sp{background:#fff;border-radius:16px;margin:0 1rem;overflow:hidden;border:0.5px solid #e0dfd8;}
+.sh{padding:32px 40px 24px;}
+.sh.teal{background:linear-gradient(135deg,#0A4F6A,#0E6F8E);}
+.sh.teal .sey,.sh.teal .stl,.sh.teal .sds{color:#fff;}
+.sh.teal .sey{color:rgba(255,255,255,0.65);}
+.sh.teal .sds{color:rgba(255,255,255,0.78);}
+.sey{font-size:10px;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:#0E6F8E;margin-bottom:8px;}
+.stl{font-size:26px;font-weight:700;color:#1a1a18;line-height:1.2;margin-bottom:10px;}
+.sds{font-size:13px;color:#5f5e5a;line-height:1.65;max-width:680px;}
+.sb{padding:28px 40px;}
+.ft{padding:16px 40px;border-top:1px solid #e8e7e0;display:flex;justify-content:space-between;align-items:center;}
+.fn{font-size:12px;font-weight:600;color:#5f5e5a;}
+.fl{font-size:11px;color:#888780;}
+.bl{font-size:10px;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:#0E6F8E;margin:22px 0 9px;}
+.bl:first-child{margin-top:0;}
+.g2{display:grid;grid-template-columns:1fr 1fr;gap:9px;}
+.cd{background:#f5f5f3;border-radius:10px;padding:13px 15px;}
+.ct{background:#f5f5f3;border-radius:10px;padding:13px 15px;border-left:3px solid #0E6F8E;}
+.cp{background:#f5f5f3;border-radius:10px;padding:13px 15px;border-left:3px solid #7F77DD;}
+.co{background:#f5f5f3;border-radius:10px;padding:13px 15px;border-left:3px solid #D85A30;}
+.ca{background:#f5f5f3;border-radius:10px;padding:13px 15px;border-left:3px solid #BA7517;}
+.cb{background:#f5f5f3;border-radius:10px;padding:13px 15px;border-left:3px solid #378ADD;}
+.cg{background:#f5f5f3;border-radius:10px;padding:13px 15px;border-left:3px solid #1D9E75;}
+.cn{background:#f5f5f3;border-radius:10px;padding:13px 15px;border-left:3px solid #C04070;}
+.cht{font-size:13px;font-weight:600;color:#1a1a18;margin-bottom:3px;}
+.chb{font-size:12px;color:#5f5e5a;line-height:1.55;}
+.lr{display:flex;gap:10px;padding:8px 0;border-bottom:0.5px solid #e8e7e0;font-size:13px;color:#1a1a18;line-height:1.5;}
+.lr:last-child{border-bottom:none;}
+.dot{flex-shrink:0;width:6px;height:6px;border-radius:50%;margin-top:7px;}
+.dt{background:#0E6F8E;}.dp{background:#7F77DD;}.da{background:#BA7517;}.dc{background:#D85A30;}.dg{background:#1D9E75;}.dn{background:#C04070;}
+.cl{border-radius:10px;padding:14px 17px;margin-bottom:14px;}
+.cl-t{background:#E6F7FA;border-left:3px solid #0E6F8E;}
+.cl-p{background:#EEEDFE;border-left:3px solid #7F77DD;}
+.cl-g{background:#E6FAF2;border-left:3px solid #1D9E75;}
+.cl-a{background:#FFF8E6;border-left:3px solid #BA7517;}
+.cl-n{background:#FAE0EE;border-left:3px solid #C04070;}
+.clt{font-size:12px;font-weight:600;color:#1a1a18;margin-bottom:3px;}
+.clb{font-size:12px;color:#5f5e5a;line-height:1.6;}
+.tg{display:inline-block;font-size:10px;font-weight:600;padding:2px 8px;border-radius:20px;margin-right:5px;}
+.tg-t{background:#0E6F8E;color:#fff;}.tg-p{background:#7F77DD;color:#fff;}.tg-g{background:#1D9E75;color:#fff;}
+.tg-a{background:#BA7517;color:#fff;}.tg-b{background:#378ADD;color:#fff;}.tg-n{background:#C04070;color:#fff;}
+.pr{display:flex;gap:12px;padding:9px 0;border-bottom:0.5px solid #e8e7e0;align-items:flex-start;}
+.pr:last-child{border-bottom:none;}
+.av{flex-shrink:0;width:32px;height:32px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:10px;font-weight:700;}
+.av-t{background:#E6F7FA;color:#0A4F6A;}.av-p{background:#EEEDFE;color:#534AB7;}.av-a{background:#FFF8E6;color:#854F0B;}
+.av-c{background:#FDF0EC;color:#993C1D;}.av-g{background:#E6FAF2;color:#0A4A3A;}.av-m{background:#FAEEDA;color:#7A3F0A;}
+.pn{font-size:13px;font-weight:600;color:#1a1a18;margin-bottom:2px;}
+.pb{font-size:12px;color:#5f5e5a;line-height:1.5;}
+.ar{display:flex;gap:10px;padding:8px 0;border-bottom:0.5px solid #e8e7e0;font-size:13px;line-height:1.5;align-items:flex-start;}
+.ar:last-child{border-bottom:none;}
+.xg{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin-top:4px;}
+.xc{background:#f5f5f3;border-radius:8px;padding:10px 12px;display:flex;align-items:center;gap:8px;}
+.xi{font-size:15px;flex-shrink:0;}
+.xl{font-size:12px;font-weight:600;color:#1a1a18;}
+.xs{font-size:11px;color:#5f5e5a;line-height:1.4;margin-top:1px;}
+.dvd{height:1px;background:#e8e7e0;margin:20px 0;}
+.stat-row{display:grid;grid-template-columns:repeat(4,1fr);gap:9px;margin-bottom:18px;}
+.stat{background:#f5f5f3;border-radius:10px;padding:13px;text-align:center;}
+.sv{font-size:22px;font-weight:700;color:#0E6F8E;}
+.sl{font-size:11px;color:#5f5e5a;margin-top:3px;line-height:1.3;}
+.tgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:9px;margin-bottom:20px;}
+.tc{background:#f5f5f3;border-radius:10px;padding:13px;text-align:center;}
+.ti{font-size:20px;margin-bottom:5px;}
+.tl{font-size:11px;font-weight:600;color:#1a1a18;line-height:1.3;}
+.as{background:#F0F9FB;border:1px solid #B8E4EE;border-radius:10px;padding:16px 18px;}
+.ast{font-size:12px;font-weight:600;color:#0A4F6A;margin-bottom:9px;text-transform:uppercase;letter-spacing:.06em;}
+.acs{display:flex;flex-wrap:wrap;gap:5px;}
+.ac{font-size:11px;padding:4px 10px;border-radius:20px;background:#0E6F8E;color:#fff;font-weight:500;}
+.etl{display:flex;gap:0;margin-bottom:28px;}
+.ep{flex:1;padding:18px 16px;position:relative;}
+.ep:not(:last-child)::after{content:'';position:absolute;right:0;top:20%;height:60%;width:1px;background:#e8e7e0;}
+.epn{font-size:11px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;margin-bottom:5px;}
+.ept{font-size:13px;font-weight:600;color:#1a1a18;margin-bottom:7px;line-height:1.3;}
+.eps{display:flex;flex-direction:column;gap:3px;}
+.pil{font-size:11px;padding:3px 8px;border-radius:20px;display:inline-block;width:fit-content;}
+.ph1{background:#E6F7FA;color:#0A4F6A;}.ph2{background:#E6F0FA;color:#0A3A6A;}.ph3{background:#E6FAF2;color:#0A4A3A;}
+.psn{display:flex;gap:6px;margin-bottom:18px;flex-wrap:wrap;}
+.psb{padding:5px 12px;border-radius:20px;border:0.5px solid #d0cfc8;font-size:11px;font-weight:500;cursor:pointer;background:transparent;color:#5f5e5a;font-family:inherit;transition:all .15s;}
+.psb.active{background:#0E6F8E;color:#fff;border-color:transparent;}
+.psb:hover:not(.active){background:#f1efe8;}
+.pp{display:none;}.pp.active{display:block;}
+.bb-table{width:100%;border-collapse:collapse;font-size:11px;margin-bottom:18px;}
+.bb-table thead tr{background:#0E6F8E;}
+.bb-table thead th{color:#fff;font-weight:600;padding:8px 10px;text-align:left;font-size:10px;letter-spacing:.05em;text-transform:uppercase;}
+.bb-table thead th:first-child{border-radius:6px 0 0 0;}
+.bb-table thead th:last-child{border-radius:0 6px 0 0;}
+.bb-table tbody tr{border-bottom:0.5px solid #e8e7e0;}
+.bb-table tbody tr:last-child{border-bottom:none;}
+.bb-table tbody tr:hover{background:#f5f5f3;}
+.bb-table td{padding:8px 10px;vertical-align:top;color:#1a1a18;line-height:1.45;}
+.bb-table td:first-child{font-weight:600;font-size:11px;}
+.bb-table td.desc{font-size:11px;color:#5f5e5a;}
+.bb-sect{font-size:10px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;background:#f5f5f3;color:#0E6F8E;padding:6px 10px;}
+.st{display:inline-block;font-size:10px;font-weight:600;padding:2px 8px;border-radius:20px;white-space:nowrap;}
+.st-x{background:#f5f5f3;color:#888780;border:0.5px solid #d0cfc8;}
+.mn{display:flex;gap:6px;margin-bottom:18px;flex-wrap:wrap;}
+.mb{padding:5px 13px;border-radius:20px;border:0.5px solid #d0cfc8;font-size:11px;font-weight:600;cursor:pointer;background:transparent;color:#5f5e5a;font-family:inherit;transition:all .15s;}
+.mb.active{background:#0E6F8E;color:#fff;border-color:transparent;}
+.mb:hover:not(.active){background:#f1efe8;}
+.mo{display:none;}.mo.active{display:block;}
+.cg5{display:grid;grid-template-columns:repeat(5,1fr);gap:7px;margin-bottom:18px;}
+.dc2{background:#f5f5f3;border-radius:10px;overflow:hidden;}
+.dh{padding:7px 9px;font-size:10px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:#fff;text-align:center;}
+.dhm{background:#0E6F8E;}.dht{background:#185FA5;}.dhw{background:#185FA5;}.dhth{background:#185FA5;}.dhf{background:#0A4F6A;}
+.db{padding:5px;display:flex;flex-direction:column;gap:4px;min-height:360px;}
+.bk2{border-radius:6px;padding:5px 7px;font-size:10px;line-height:1.4;font-weight:500;}
+.bkt{background:#C8EDF5;color:#0A4F6A;}
+.bkb{background:#D6E8F7;color:#0A3A6A;}
+.bkp{background:#E8E6FD;color:#3A338A;}
+.bkg{background:#D4F0E4;color:#0A4A2A;}
+.bka{background:#FDF0D0;color:#6B3F00;}
+.bko{background:#FCDFD5;color:#7A2A10;}
+.bkn{background:#FAE0EE;color:#7A1848;}
+.bkgr{background:#fff;color:#5f5e5a;border:0.5px solid #e8e7e0;}
+.bktm{font-size:9px;font-weight:400;opacity:.65;display:block;margin-bottom:1px;}
+.leg{display:flex;flex-wrap:wrap;gap:7px;margin-bottom:18px;}
+.li{display:flex;align-items:center;gap:5px;font-size:11px;color:#5f5e5a;}
+.ld{width:10px;height:10px;border-radius:3px;flex-shrink:0;}
+.note-box{background:#f5f5f3;border-radius:10px;padding:13px 15px;font-size:12px;color:#5f5e5a;line-height:1.6;margin-top:14px;}
+.wh{background:linear-gradient(145deg,#0A4F6A 0%,#0E6F8E 50%,#1A9DB5 100%);border-radius:12px;padding:32px 38px;margin-bottom:22px;position:relative;overflow:hidden;}
+.whb{position:absolute;border-radius:50%;background:rgba(255,255,255,0.05);}
+.whl{font-size:10px;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:rgba(255,255,255,0.6);margin-bottom:10px;}
+.wht{font-size:26px;font-weight:700;color:#fff;line-height:1.2;margin-bottom:10px;}
+.wht span{color:#7DD9EC;}
+.whs{font-size:13px;color:rgba(255,255,255,0.78);line-height:1.65;max-width:560px;}
+.wg{display:grid;grid-template-columns:1fr 1fr;gap:11px;margin-bottom:18px;}
+.wc{border-radius:12px;padding:18px 20px;}
+.wc1{background:linear-gradient(135deg,#E6F7FA,#F0FBFD);border:1px solid #B8E4EE;}
+.wc2{background:linear-gradient(135deg,#E6F0FA,#EEF5FC);border:1px solid #B8D4F0;}
+.wc3{background:linear-gradient(135deg,#EEEDFE,#F4F3FE);border:1px solid #C8C4F8;}
+.wc4{background:linear-gradient(135deg,#FFF8E6,#FFFBF0);border:1px solid #F0D890;}
+.wc5{background:linear-gradient(135deg,#FDF0EC,#FEF5F2);border:1px solid #F0C4B0;}
+.wcd{background:linear-gradient(135deg,#0A4F6A,#0E6F8E);grid-column:1/-1;}
+.wci{font-size:26px;margin-bottom:8px;display:block;}
+.wct{font-size:13px;font-weight:700;margin-bottom:6px;}
+.wcb{font-size:12px;line-height:1.6;}
+.wc1 .wct{color:#0A4F6A;}.wc1 .wcb{color:#1A5F7A;}
+.wc2 .wct{color:#0A3A6A;}.wc2 .wcb{color:#1A4A7A;}
+.wc3 .wct{color:#3A338A;}.wc3 .wcb{color:#4A43A0;}
+.wc4 .wct{color:#6B3F00;}.wc4 .wcb{color:#7B4F00;}
+.wc5 .wct{color:#7A2A10;}.wc5 .wcb{color:#8A3A20;}
+.wcd .wct{color:#fff;font-size:15px;}.wcd .wcb{color:rgba(255,255,255,0.82);}.wcd .wci{font-size:32px;}
+.qb{background:#f5f5f3;border-radius:10px;border-left:3px solid #0E6F8E;padding:15px 18px;margin-top:18px;}
+.qt{font-size:14px;color:#1a1a18;line-height:1.7;font-style:italic;}
+.qa{font-size:11px;color:#5f5e5a;margin-top:7px;font-weight:500;}
+.cvr{background:linear-gradient(145deg,#0A4F6A 0%,#0E6F8E 45%,#1A9DB5 100%);border-radius:16px;padding:68px 60px 56px;min-height:500px;position:relative;overflow:hidden;margin:0 1rem;}
+.cbg{position:absolute;border-radius:50%;background:rgba(255,255,255,0.04);}
+.cey{font-size:11px;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:rgba(255,255,255,0.6);margin-bottom:18px;}
+.ctl{font-size:46px;font-weight:700;color:#fff;line-height:1.1;margin-bottom:8px;}
+.ctl span{color:#7DD9EC;}
+.csb{font-size:17px;font-weight:300;color:rgba(255,255,255,0.75);margin-bottom:44px;}
+.cab{border-top:1px solid rgba(255,255,255,0.2);padding-top:26px;display:flex;align-items:center;gap:14px;}
+.cav{width:50px;height:50px;border-radius:50%;background:rgba(255,255,255,0.15);border:2px solid rgba(255,255,255,0.3);display:flex;align-items:center;justify-content:center;font-size:17px;font-weight:600;color:#fff;}
+.can{font-size:16px;font-weight:600;color:#fff;}
+.car{font-size:12px;color:rgba(255,255,255,0.6);}
+.ccs{display:flex;gap:7px;margin-top:28px;flex-wrap:wrap;}
+.cc{padding:5px 13px;border-radius:20px;background:rgba(255,255,255,0.12);border:1px solid rgba(255,255,255,0.2);font-size:11px;font-weight:500;color:rgba(255,255,255,0.85);}
+</style>
+</head>
+<body>
+<div class="bk">
+<div class="nav">
+  <button class="nb active" onclick="go('cover',this)">Cover</button>
+  <button class="nb" onclick="go('exec',this)">Summary</button>
+  <button class="nb" onclick="go('d30',this)">Days 1–30</button>
+  <button class="nb" onclick="go('d60',this)">Days 31–60</button>
+  <button class="nb" onclick="go('d90',this)">Days 61–90</button>
+  <button class="nb" onclick="go('pipe',this)">Pipegen</button>
+  <button class="nb" onclick="go('ai',this)">AI playbook</button>
+  <button class="nb" onclick="go('bigbet',this)">Big bet accounts</button>
+  <button class="nb" onclick="go('support',this)">Support needed</button>
+  <button class="nb" onclick="go('cal',this)">3-month calendar</button>
+  <button class="nb" onclick="go('why',this)">Why I want this</button>
+</div>
+
+<!-- COVER -->
+<div id="cover" class="pg active">
+  <div class="cvr">
+    <div class="cbg" style="width:380px;height:380px;top:-110px;right:-70px;"></div>
+    <div class="cbg" style="width:190px;height:190px;bottom:-55px;left:50px;"></div>
+    <div class="cey">Manager of Account Management · Regional Team</div>
+    <div class="ctl">My 30 · 60 · 90<br><span>Day Plan</span></div>
+    <div class="csb">Acquia · Regional Account Management</div>
+    <div class="ccs">
+      <div class="cc">Days 1–30 · Listen and Orient</div>
+      <div class="cc">Days 31–60 · Build and Install</div>
+      <div class="cc">Days 61–90 · Accelerate and Own</div>
+      <div class="cc">AI and Tools Workflow</div>
+      <div class="cc">Prospecting within Existing Accounts</div>
+      <div class="cc">Value Capture and Win Stories</div>
+      <div class="cc">Big Bet Account Framework</div>
+      <div class="cc">3-Month Calendar</div>
+    </div>
+    <div class="cab">
+      <div class="cav">LM</div>
+      <div><div class="can">Lauren Mazzola</div><div class="car">Candidate · Manager, Account Management</div></div>
+    </div>
+  </div>
+</div>
+
+<!-- EXEC SUMMARY -->
+<div id="exec" class="pg">
+  <div class="sp">
+    <div class="sh teal"><div class="sey">Overview</div><div class="stl">Executive summary</div><div class="sds">My approach is built on one principle: protect what's working, earn the right to evolve it, and accelerate from there. The team is having a great quarter and I'm not here to rebuild anything. I'm here to understand what's driving that performance, honor it, and introduce new habits around prospecting within existing accounts and capturing the wins that open new doors so this team keeps climbing.</div></div>
+    <div class="sb">
+      <div class="stat-row">
+        <div class="stat"><div class="sv">8–9</div><div class="sl">Reps on the team</div></div>
+        <div class="stat"><div class="sv">3</div><div class="sl">New reps ramping</div></div>
+        <div class="stat"><div class="sv">2</div><div class="sl">New frameworks introduced</div></div>
+        <div class="stat"><div class="sv">90</div><div class="sl">Days to full ownership</div></div>
+      </div>
+      <div class="bl">My plan at a glance</div>
+      <div class="etl" style="background:#f5f5f3;border-radius:12px;overflow:hidden;">
+        <div class="ep"><div class="epn" style="color:#0E6F8E;">Days 1–30</div><div class="ept">Listen, learn and orient</div><div class="eps"><span class="pil ph1">Shadow Maura</span><span class="pil ph1">1:1s with all reps</span><span class="pil ph1">Leadership cadences</span><span class="pil ph1">CRM audit and ride-alongs</span><span class="pil ph1">Meet key stakeholders</span></div></div>
+        <div class="ep"><div class="epn" style="color:#185FA5;">Days 31–60</div><div class="ept">Build momentum and add my layer</div><div class="eps"><span class="pil ph2">AI and tools team-wide</span><span class="pil ph2">Source cross-sell wave</span><span class="pil ph2">Prospecting motion installed</span><span class="pil ph2">Value capture program</span><span class="pil ph2">AM/RM joint planning</span></div></div>
+        <div class="ep"><div class="epn" style="color:#0A6B4A;">Days 61–90</div><div class="ept">Accelerate and own</div><div class="eps"><span class="pil ph3">Capitalize on Engage momentum</span><span class="pil ph3">Reps as thought leaders</span><span class="pil ph3">Win stories driving new biz</span><span class="pil ph3">Big bet accounts at QBR</span><span class="pil ph3">QBR-ready report</span></div></div>
+      </div>
+      <div class="bl">Six themes that run through everything I do</div>
+      <div class="tgrid">
+        <div class="tc"><div class="ti">🤝</div><div class="tl">Protect and build on Maura's momentum</div></div>
+        <div class="tc"><div class="ti">🤖</div><div class="tl">AI and internal tools as daily infrastructure</div></div>
+        <div class="tc"><div class="ti">📋</div><div class="tl">Business acumen and trusted advisor positioning</div></div>
+        <div class="tc"><div class="ti">🔍</div><div class="tl">Prospecting and hunting within existing accounts</div></div>
+        <div class="tc"><div class="ti">🏆</div><div class="tl">Capture value and turn wins into new business</div></div>
+        <div class="tc"><div class="ti">🌱</div><div class="tl">Develop every rep, new and experienced</div></div>
+      </div>
+      <div class="dvd"></div>
+      <div class="bl">What I'm asking for to set this up for success</div>
+      <div class="as"><div class="ast">Key asks from Maura, D'Arcy, leadership, and the org</div><div class="acs"><span class="ac">Maura overlap and knowledge transfer</span><span class="ac">Mentor assignment</span><span class="ac">D'Arcy coaching cadence</span><span class="ac">Leadership meeting context</span><span class="ac">Acquia Source briefing</span><span class="ac">CRM access day one</span><span class="ac">Engage AI roadmap briefing</span><span class="ac">Cross-functional introductions</span><span class="ac">Competitive battlecards</span><span class="ac">Win story and reference program partnership</span><span class="ac">Culture event opportunities</span><span class="ac">C-Suite introductions</span></div></div>
+    </div>
+    <div class="ft"><span class="fn">Lauren Mazzola</span><span class="fl">30·60·90 Day Plan · Acquia</span></div>
+  </div>
+</div>
+
+<!-- DAYS 1–30 -->
+<div id="d30" class="pg">
+  <div class="sp">
+    <div class="sh teal"><div class="sey">Phase one</div><div class="stl">Days 1–30 · Listen, learn, and orient</div><div class="sds">My first 30 days are about orienting in three directions simultaneously: into the team, across to peers and partners, and upward into leadership. I won't disrupt what's working. I'll absorb how Maura has built this team, understand what's driving the quarter, and lay the groundwork for everything that comes next.</div></div>
+    <div class="sb">
+      <div class="cl cl-g"><div class="clt"><span class="tg tg-g">Maura transition</span> Shadow, absorb, protect the quarter</div><div class="clb">I plan to use every day of Maura's overlap as intentionally as possible. My goal isn't to take over immediately. It's to understand exactly why this team is performing so I can protect it first and build on it carefully. I'll shadow her in leadership meetings, forecast calls and 1:1s and co-run the final team meeting so the handoff feels confident and deliberate to the reps.</div></div>
+      <div class="bl">Leadership orientation — my week one priority</div>
+      <div class="g2">
+        <div class="co"><div class="cht">Learn the meeting cadences and formats</div><div class="chb">I'll get the full calendar of leadership meetings I'm now part of including forecast calls, pipeline reviews, manager syncs and QBR prep. I want to understand the format and prep expectations for each before I'm in the room presenting.</div></div>
+        <div class="co"><div class="cht">Understand the forecasting model</div><div class="chb">I'll learn how the forecast flows from rep to manager to leadership, what categories Acquia uses and what makes a manager's call credible. I plan to sit in on Maura's final forecast submission and debrief with her afterward.</div></div>
+        <div class="co"><div class="cht">Learn how to communicate upward</div><div class="chb">I'll ask D'Arcy directly how I should communicate wins, risks and escalations and what the right channel and format is for each. I want to understand the SVP's preferences and how credibility is built or lost quickly in this leadership team.</div></div>
+        <div class="co"><div class="cht">Map the SVP's stated priorities</div><div class="chb">Growth, AI adoption, AM/RM alignment, onsites, business acumen, team culture and energy. I know these cold. Every time I present to leadership I'll connect what my team is doing to one of these priorities explicitly.</div></div>
+      </div>
+      <div class="bl">Key introductions in weeks one and two</div>
+      <div>
+        <div class="pr"><div class="av av-c">C</div><div><div class="pn">C-Suite and new senior leaders</div><div class="pb">I'll request introductions through D'Arcy to relevant C-Suite leaders especially those who joined while I was away. I want to understand their priorities and communication style as quickly as possible.</div></div></div>
+        <div class="pr"><div class="av av-t">PM</div><div><div class="pn">Peer managers</div><div class="pb">I'll introduce myself to every peer manager in the first two weeks and ask what they wish they'd known in their first 30 days. These are future allies in forecast calls and QBRs.</div></div></div>
+        <div class="pr"><div class="av av-m">MK</div><div><div class="pn">Product Marketing and Marketing team</div><div class="pb">I'll connect with Maggie S and the broader marketing team early. Marketing is a pipeline generation partner and I plan to co-build content, campaigns and enablement materials with them throughout the 90 days and beyond.</div></div></div>
+        <div class="pr"><div class="av av-p">PL</div><div><div class="pn">Product leaders especially Acquia Source</div><div class="pb">I'll meet product leads for Cloud, DAM and Source with Source being entirely new to me. I want to get up to speed on the roadmap and build these relationships quickly so I can lead the team with full context.</div></div></div>
+        <div class="pr"><div class="av av-g">RM</div><div><div class="pn">RM manager and RM team leadership</div><div class="pb">The AM/RM interdependency is one of the most important relationships I'll manage. I'll establish a recurring sync early so alignment issues don't become QBR surprises.</div></div></div>
+        <div class="pr"><div class="av av-a">CS</div><div><div class="pn">CSM leadership and product specialist CSMs</div><div class="pb">The CSM model has changed significantly. I'll map what AMs can still lean on versus what they own now and get clear on those boundaries before I coach my reps on them.</div></div></div>
+      </div>
+      <div class="bl">Asks for Maura in the first two weeks</div>
+      <div class="g2">
+        <div class="cg"><div class="cht">Rep relationship intelligence</div><div class="chb">What motivates each rep, what derails them, how they receive feedback and the quality of each rep's RM relationship. This takes 6 months to build independently and I intend to absorb it in two weeks.</div></div>
+        <div class="cg"><div class="cht">Account risk map</div><div class="chb">Accounts that look healthy in Salesforce but aren't including political sensitivities, exec relationship fragility and Rule-of-X pricing hangover. I'll sit with Maura and write this down together.</div></div>
+        <div class="cg"><div class="cht">Full operating cadence</div><div class="chb">Her exact meeting structure, 1:1 format, pipeline review approach and how she handles underperformance conversations. I'll adopt it first and layer in my own style gradually.</div></div>
+        <div class="cg"><div class="cht">How she operates upward</div><div class="chb">How she runs forecast calls, communicates with the SVP and what she always prepares before a leadership meeting. Management tradecraft I can't get anywhere else.</div></div>
+      </div>
+      <div class="bl">Relearning Acquia since I left</div>
+      <div class="g2">
+        <div class="ct"><div class="cht">Product landscape reset</div><div class="chb">I'll deep-dive Cloud, DAM and Acquia Source with Source being entirely new to me. I'll use internal tools and AI to help build a personal study guide including product summaries, competitive Q&A and a what-changed brief for coaching reps.</div></div>
+        <div class="ct"><div class="cht">New GTM and comp model</div><div class="chb">I'll fully internalize the AM/RM 70/30 split, the RM multi-year kicker and where the interdependency creates alignment versus friction. The Rule-of-X is gone and I need to understand which accounts still carry that baggage.</div></div>
+        <div class="ct"><div class="cht">AI messaging to capitalize on Engage announcements</div><div class="chb">I'll get fully briefed on the AI-first positioning coming out of Engage. I want to be ready to lead the team on the AI-driven seller support announcement rather than just passing it down from leadership. Engage has already happened and I want to hit the ground running with a clear point of view on what it means for our accounts.</div></div>
+        <div class="ct"><div class="cht">RM/CSM model evolution</div><div class="chb">Two significant changes happened while I was away: renewal managers were introduced as a dedicated function and the CSM role shifted to product-specialist coverage on core accounts. I'll map both clearly so I can coach my AMs on the full ecosystem they're operating in.</div></div>
+      </div>
+      <div class="bl">Pipeline intelligence in the first 30 days</div>
+      <div class="g2">
+        <div class="cb"><div class="cht">Ride-alongs as pipeline intel</div><div class="chb">I'll join 2–3 customer calls per rep in the first 30 days listening specifically for pipeline signals including unmet needs, missing products and frustrations that could be cross-sell opportunities. I'll use internal tools and AI to help flag expansion signals after each call and capture them in a running opportunity log per rep.</div></div>
+        <div class="cb"><div class="cht">CRM pipeline audit per rep</div><div class="chb">I'll review every rep's open pipeline for stage accuracy, last activity date, documented next steps and realistic close dates. Internal tools help surface deals with no activity in 30 or more days. My first pipeline conversation with leadership will be grounded in a clean, honest number.</div></div>
+      </div>
+      <div class="cl cl-p" style="margin-top:14px;"><div class="clt"><span class="tg tg-p">AI and internal tools</span> I model it before I ask anything of the team</div><div class="clb">In week one I'll begin using AI and internal tools visibly in my own workflow including morning prioritization, 1:1 prep, leadership meeting prep and risk doc drafting. I'll let reps see it in action before I introduce it as a team motion. By week three I'll run a show-and-tell: here's how I use these tools and here's what they save me.</div></div>
+      <div class="bl">Team 1:1s with all reps in weeks one and two</div>
+      <div class="g2">
+        <div class="cd"><div class="cht">Experienced reps (5–6)</div><div class="chb">I'll pair what Maura has told me with what each rep tells me directly. My goal is for every rep to feel heard, not assessed. My opening question is what would make you more successful and I won't make promises yet.</div></div>
+        <div class="cd"><div class="cht">New reps (3)</div><div class="chb">I'll establish a weekly cadence immediately and be explicit: I'm going to be more hands-on with you as you ramp and that's intentional, not a red flag. A leadership transition is most destabilizing for the newest people on the team.</div></div>
+      </div>
+      <div class="bl">30-day deliverable</div>
+      <div class="ct"><div class="cht">Team state-of-the-union memo to D'Arcy</div><div class="chb">I'll use internal tools and AI to help structure this. It will cover what's driving the team's current quarter performance, pipeline health by rep, new rep ramp status, early coaching observations, my read on the leadership operating model and the one or two things I'm thinking about evolving in month two.</div></div>
+    </div>
+    <div class="ft"><span class="fn">Lauren Mazzola</span><span class="fl">Days 1–30 · Listen, Learn and Orient</span></div>
+  </div>
+</div>
+
+<!-- DAYS 31–60 -->
+<div id="d60" class="pg">
+  <div class="sp">
+    <div class="sh teal"><div class="sey">Phase two</div><div class="stl">Days 31–60 · Build momentum and add my layer</div><div class="sds">Maura has officially moved on and I've had 30 days to absorb what she built and understand what's been driving the team's success. This phase isn't about changing things. It's an opportunity to make small, thoughtful additions to what's already working by bringing in my personal operating style, introducing AI and internal tools into the team's workflow and beginning to layer in more strategic account planning, prospecting habits and a value capture program.</div></div>
+    <div class="sb">
+      <div class="cl cl-t"><div class="clt"><span class="tg tg-t">My approach</span> Earned evolution, not imposed change</div><div class="clb">The standard Maura set is high and the team has internalized it. My job in this phase is to meet that standard first and then look for places where small tweaks create meaningful improvement. Tightening the relationship and onsite rhythm, introducing smarter tools to how reps prep for calls, installing a prospecting habit and beginning to systematically capture the value stories that will open new doors inside existing accounts.</div></div>
+      <div class="bl">Pipeline building motions I'll introduce this phase</div>
+      <div class="g2">
+        <div class="ct"><div class="cht">Account planning for top 10 accounts</div><div class="chb">I'll coach AMs to build growth plays per account including Cloud expansion, DAM upsell and Acquia Source cross-sell. For big bet accounts I'll introduce the full account plan framework. I'll bring RMs in early wherever multi-year renewal timing intersects with expansion opportunity.</div></div>
+        <div class="ct"><div class="cht">Relationship and onsite push</div><div class="chb">I'll push for 1–2 meaningful onsites per rep per quarter with a focus on quality over volume. More importantly I'll coach AMs to invest in truly understanding their customers' businesses, their goals, pressures, language and priorities so they can show up as genuine trusted partners and not just vendors with a product to sell.</div></div>
+        <div class="ct"><div class="cht">Identify the first Acquia Source wave combined with rooms of the house and cross-sell prospecting</div><div class="chb">Source is the cleanest cross-sell in the book with no baggage and no prior pricing history. I'll build the initial target list using internal tools and AI to help map content and digital operations fit across the book. I'll combine this with a rooms of the house exercise mapping which teams and use cases within each account aren't yet activated and tie it directly into the prospecting motion so reps are reaching out with a specific, relevant reason.</div></div>
+        <div class="ct"><div class="cht">AM/RM joint account strategy</div><div class="chb">Monthly joint account reviews with each AM/RM pair focused on the top accounts where growth and renewal strategy are aligned. Internal tools help prep account briefs ahead of each review. The 70/30 model is our structural advantage and I intend to use it.</div></div>
+      </div>
+      <div class="bl">Prospecting motion — hunting within existing accounts</div>
+      <div class="cl cl-n"><div class="clt"><span class="tg tg-n">New habit</span> Prospecting is a skill, not just a personality trait. I'll build it into how the team operates.</div><div class="clb">Most regional AMs default to managing relationships they already have. I want to change that instinct and help this team become comfortable hunting for new business within their existing account base. That means finding the right stakeholders, building the right message and having the confidence to reach out to someone who hasn't invited them yet.</div></div>
+      <div class="g2">
+        <div class="cn"><div class="cht">New stakeholder mapping exercise</div><div class="chb">Every rep will map 3–5 stakeholders in their top 10 accounts who they don't currently have a relationship with but should. We'll use internal tools and AI to help research each person's role and likely priorities and build a personalized first-touch outreach. This becomes a recurring monthly exercise.</div></div>
+        <div class="cn"><div class="cht">Warm introduction through existing champions</div><div class="chb">I'll coach every AM to identify at least one satisfied internal champion per top account who can make a warm introduction to a new team, department or executive. A champion-facilitated intro converts at a significantly higher rate than cold outreach and is the most underutilized prospecting tool in an existing account base.</div></div>
+        <div class="cn"><div class="cht">Rooms of the house outbound plays</div><div class="chb">For accounts using one or two Acquia products I'll coach reps to identify the teams and use cases not yet activated and build a proactive business case for each. Internal tools and AI help build the value hypothesis per room before the rep reaches out. The goal is to stop waiting for inbound interest and start creating it.</div></div>
+        <div class="cn"><div class="cht">Multi-threading above the contact</div><div class="chb">Most reps have one contact per account. That's a single point of failure and a prospecting ceiling. I'll coach every rep to identify and build relationships with 2–3 director-level and above stakeholders in their top 10 accounts. Research tools help identify each stakeholder's likely priorities and inform personalized intro messaging.</div></div>
+      </div>
+      <div class="bl">Value capture and win stories — turning success into new business</div>
+      <div class="cl cl-a"><div class="clt"><span class="tg tg-a">Value capture program</span> Every win is a door to the next one</div><div class="clb">One of the most underused pipeline tools in account management is the documented customer win. When a rep can point to a concrete business outcome Acquia helped a customer achieve in that customer's own words, it becomes the most credible and compelling prospecting tool they have. I'll build a lightweight but consistent value capture practice into the team's workflow.</div></div>
+      <div class="g2">
+        <div class="ca"><div class="cht">Document outcomes after every significant win</div><div class="chb">Within two weeks of any meaningful customer milestone the AM will document the outcome using a simple template: what the customer was trying to achieve, what Acquia enabled and what the measurable result was. Internal tools and AI can help draft this from call notes and CRM activity quickly but the rep owns the story.</div></div>
+        <div class="ca"><div class="cht">Capture quotes and customer language</div><div class="chb">I'll coach reps to ask customers directly for a quote or a sentence describing the value they've received. Customers say things in discovery and in EBRs that are more powerful than anything we could write for them. Capturing that language in real time and storing it is a habit most reps don't build until it's too late. We'll build it now.</div></div>
+        <div class="ca"><div class="cht">Use win stories as soft introduction tools</div><div class="chb">Once a win is documented it becomes a prospecting asset. When reaching out to a new stakeholder within the same account or a peer at another company, sharing a relevant win story from a comparable team creates immediate credibility and opens the door to a conversation naturally. I'll work with Maggie S to package these stories for broader use.</div></div>
+        <div class="ca"><div class="cht">Share wins upward and across the team</div><div class="chb">I'll build win stories into the weekly team meeting as a standing agenda item. Sharing wins publicly reinforces the behaviors we want and gives the team a growing library of proof points to draw from. I'll also route strong win stories to D'Arcy and leadership as a regular signal of team performance and customer health.</div></div>
+      </div>
+      <div class="bl">Operating rhythm</div>
+      <div>
+        <div class="lr"><span class="dot dt"></span><span><strong style="font-weight:600;">Weekly team meeting (Monday)</strong> Same structure Maura built with my energy added. Win of the week, one coaching theme and a standing win story share. Short, specific and upbeat.</span></div>
+        <div class="lr"><span class="dot dt"></span><span><strong style="font-weight:600;">Bi-weekly 1:1s</strong> Structured around pipeline, one coaching observation and one development focus. Consistent template. Internal tools help me synthesize notes and track coaching themes after each session.</span></div>
+        <div class="lr"><span class="dot dt"></span><span><strong style="font-weight:600;">Leadership meetings and forecast calls</strong> Running these solo now. I'll use internal tools to help structure my forecast narrative before each call including the number, confidence, key deals, risk and what I need from leadership.</span></div>
+        <div class="lr"><span class="dot dt"></span><span><strong style="font-weight:600;">Monthly joint AM/RM account reviews</strong> Deliberate, strategic alignment rather than a check-in.</span></div>
+        <div class="lr"><span class="dot dp"></span><span><strong style="font-weight:600;">Monthly mentor check-in</strong> I'll bring a specific management challenge to every session to get a perspective outside my direct chain of command.</span></div>
+      </div>
+      <div class="cl cl-p" style="margin-top:14px;"><div class="clt"><span class="tg tg-p">AI and tools rollout — week 5 team session</span> Show-and-tell, not a training</div><div class="clb">I'll run a dedicated session where I walk through exactly how I use AI and internal tools in my own workflow. Then I'll open it up and ask reps where they spend time that feels manual or repetitive. One new tool habit per rep assigned before the next team meeting.</div></div>
+      <div class="bl">60-day deliverable</div>
+      <div class="ct"><div class="cht">Pipeline health dashboard and written coaching plans per rep</div><div class="chb">Pipeline by rep versus the 30-day baseline, account planning progress, new rep ramp update and a written coaching plan for each rep. I'll also share the first batch of documented win stories and value captures as evidence of the cultural shift I'm building.</div></div>
+    </div>
+    <div class="ft"><span class="fn">Lauren Mazzola</span><span class="fl">Days 31–60 · Build Momentum and Add My Layer</span></div>
+  </div>
+</div>
+
+<!-- DAYS 61–90 -->
+<div id="d90" class="pg">
+  <div class="sp">
+    <div class="sh teal"><div class="sey">Phase three</div><div class="stl">Days 61–90 · Accelerate, own, and capitalize on Engage momentum</div><div class="sds">The team is fully mine. Engage has already happened and the real work begins the moment I step in the door. This phase is about taking everything that was learned, presented and shared at Engage and turning it into pipeline momentum. Reps become thought leaders by bringing those conversations back to their customers. Win stories start driving new conversations. And the business acumen shift moves from coaching topic to daily reality.</div></div>
+    <div class="sb">
+      <div class="bl">Capitalize on Engage — reps as thought leaders</div>
+      <div class="cl cl-t"><div class="clt"><span class="tg tg-t">Post-Engage philosophy</span> The announcements have been made. Now we make them mean something for our customers.</div><div class="clb">The best thing a rep can do with a major company announcement is bring the most relevant ideas, product updates and market positioning back to customers and prospects with a point of view on what it means for their specific business. That's not just follow-through. That's thought leadership. I'll coach every AM to position themselves as the person who helps their customers understand what's changing and why it matters to them.</div></div>
+      <div class="g2">
+        <div class="ct"><div class="cht">Debrief the team and distill the key themes</div><div class="chb">I'll run a team session to synthesize the biggest Engage announcements, customer signals and market themes into a simple shareable brief. Every rep leaves with 2–3 ideas they can bring back to their top accounts as genuine conversation starters and not talking points to recite.</div></div>
+        <div class="ct"><div class="cht">Reps share Engage learnings with customers</div><div class="chb">I'll coach every AM to reach out to their top 5 accounts with something genuinely useful: a key AI announcement relevant to their business, a trend that was discussed or a product direction that affects their roadmap. Not a follow-up email. A thought-leadership touchpoint that opens a real conversation.</div></div>
+        <div class="ct"><div class="cht">AI announcement as a pipeline trigger</div><div class="chb">I'll have a personalized follow-up approach ready for the team built around the AI-driven seller support announcement. Internal tools help reps personalize efficiently so every rep can send high-quality thoughtful follow-ups in a fraction of the usual time.</div></div>
+        <div class="ct"><div class="cht">Exec relationships into scheduled next steps</div><div class="chb">For big bet accounts where exec relationships were built or deepened around Engage I'll work with reps to schedule formal next conversations before the momentum fades. Internal tools help draft context-setting briefs that give each contact a clear reason for the follow-up conversation.</div></div>
+      </div>
+      <div class="bl">Win stories driving new business</div>
+      <div class="g2">
+        <div class="ca"><div class="cht">Turn win stories into prospecting tools</div><div class="chb">By day 90 every rep should have 2–3 documented win stories from their accounts. I'll coach them to use these actively in prospecting outreach by sharing a relevant win from a comparable team or company as a door opener to a new stakeholder conversation. Proof points from real customers are the most credible first-touch message we have.</div></div>
+        <div class="ca"><div class="cht">Champion-led introductions from documented wins</div><div class="chb">Where a win story involves a satisfied champion I'll coach reps to go back to that person and ask for a warm introduction to another team, executive or peer company. A champion who has seen real value is usually happy to make that introduction. We just have to ask and most reps don't. That changes this quarter.</div></div>
+      </div>
+      <div class="bl">Keeping the prospecting habit alive</div>
+      <div class="g2">
+        <div class="cn"><div class="cht">Monthly prospecting review in 1:1s</div><div class="chb">I'll add a standing agenda item to every bi-weekly 1:1: who did you reach out to this week that wasn't already expecting to hear from you? This keeps the prospecting habit from slipping once the urgency of month two has faded. Prospecting only becomes instinct through repetition and accountability.</div></div>
+        <div class="cn"><div class="cht">Prospecting workshop using real account data</div><div class="chb">I'll run a team workshop where each rep maps their top account's full org chart, identifies 2–3 untapped stakeholders and builds their outreach approach live in the room. Internal tools and AI help research each person before the session. Reps leave with actual outreach they can send that day.</div></div>
+      </div>
+      <div class="bl">Big bet accounts fully activated</div>
+      <div>
+        <div class="lr"><span class="dot da"></span><span>By day 90 every rep with a big bet account will have a completed account plan with outcomes documented, buyer group mapped, greenspace identified, exec sponsor assigned and risk documented.</span></div>
+        <div class="lr"><span class="dot da"></span><span>Internal tools and AI help reps build the financial and competitive sections. Business acumen gets operationalized here, not just talked about in a coaching session.</span></div>
+        <div class="lr"><span class="dot da"></span><span>For any at-risk big bet accounts I'll have a structured risk brief ready for leadership and will present it proactively to D'Arcy before it surfaces in a QBR.</span></div>
+      </div>
+      <div class="bl">Team development</div>
+      <div>
+        <div class="lr"><span class="dot dt"></span><span><strong style="font-weight:600;">New rep ramp review</strong> Are all three new reps on track for pipeline by month 4–5? If not I'll define the intervention and have that conversation with D'Arcy proactively, not at month 5.</span></div>
+        <div class="lr"><span class="dot dt"></span><span><strong style="font-weight:600;">Stretch assignments</strong> I'll identify 1–2 reps ready for a stretch including Engage thought leadership content, account planning leadership or peer coaching.</span></div>
+        <div class="lr"><span class="dot dt"></span><span><strong style="font-weight:600;">Business acumen workshop</strong> I'll run a team session on consultative discovery using real call recordings. The goal is reps who lead every conversation with the customer's business priorities before ever mentioning a product.</span></div>
+      </div>
+      <div class="bl">90-day deliverable</div>
+      <div class="ct"><div class="cht">QBR-ready report to SVP and D'Arcy</div><div class="chb">Pipeline created versus target, Acquia Source cross-sell funnel, Engage-driven pipeline generated, AM/RM joint deal count, new rep progress, big bet account plan completion rate, prospecting activity metrics, documented win stories produced and my top 3 coaching priorities for next quarter. Numbers and narrative.</div></div>
+    </div>
+    <div class="ft"><span class="fn">Lauren Mazzola</span><span class="fl">Days 61–90 · Accelerate, Own and Capitalize on Engage Momentum</span></div>
+  </div>
+</div>
+
+<!-- PIPEGEN -->
+<div id="pipe" class="pg">
+  <div class="sp">
+    <div class="sh teal"><div class="sey">Pipeline creation</div><div class="stl">My pipegen strategy by phase</div><div class="sds">The goal is always rolling net-new pipeline on a weekly basis. At every stage of the 90 days I'll be pushing reps to hunt for pipeline while also identifying what already exists but isn't being worked. These two motions run in parallel. New outreach and pipeline hygiene are both non-negotiable.</div></div>
+    <div class="sb">
+      <div class="psn">
+        <button class="psb active" onclick="showPP('pp1',this)">Days 1–30</button>
+        <button class="psb" onclick="showPP('pp2',this)">Days 31–60</button>
+        <button class="psb" onclick="showPP('pp3',this)">Days 61–90</button>
+      </div>
+      <div id="pp1" class="pp active">
+        <div class="cl cl-t"><div class="clt">Hunt for new pipeline while fixing what's leaking</div><div class="clb">The goal is continuous net-new pipeline on a weekly basis. In the first 30 days I'll be pushing reps to actively hunt for opportunities while simultaneously finding the pipeline that already exists but isn't being worked. Stale deals, uncontacted whitespace, lapsed accounts and rep blind spots are where the fastest early wins live and I won't wait to address them.</div></div>
+        <div class="bl">Where I'll find hidden pipeline</div>
+        <div class="g2">
+          <div class="cb"><div class="cht">CRM pipeline audit per rep</div><div class="chb">I'll review every rep's open pipeline for stage accuracy, last activity date, documented next steps and realistic close dates. Internal tools help surface deals with no activity in 30 or more days. My first pipeline conversation with leadership will be grounded in a clean, honest number.</div></div>
+          <div class="cb"><div class="cht">Whitespace mapping across the book</div><div class="chb">For every account I'll look at which Acquia products they have versus which they don't. Internal tools and AI help surface expansion gaps across the book. Fastest path to finding upsell the rep has stopped seeing.</div></div>
+          <div class="cb"><div class="cht">Lapsed and dormant accounts</div><div class="chb">Accounts with no active opportunity and no meaningful contact in 90 or more days aren't dead. They're unworked. I'll use internal research tools to identify what's changed at each company recently and build a personalized re-engagement rationale for each rep.</div></div>
+          <div class="cb"><div class="cht">RM renewal pipeline as a growth signal</div><div class="chb">I'll pull the list of renewals in the next 6 months with the RM team. Every renewal is a conversation and every renewal conversation is an expansion opportunity if the AM is in it early enough.</div></div>
+        </div>
+        <div class="bl">Active pipeline moves in days 1–30</div>
+        <div class="g2">
+          <div class="cd"><div class="cht">Ride-alongs as pipeline intel</div><div class="chb">I'll join 2–3 customer calls per rep in the first 30 days listening for pipeline signals including unmet needs, missing products and frustrations that could be cross-sell opportunities. Internal tools help flag expansion signals after each call and capture them in a running opportunity log per rep.</div></div>
+          <div class="cd"><div class="cht">Continue active pipegen campaigns</div><div class="chb">I'll review any existing outbound campaigns and prospecting motions already in flight and ensure they continue without disruption during the transition. Good pipeline momentum doesn't need a new manager to hit pause. It needs one who keeps pushing.</div></div>
+        </div>
+        <div class="cb" style="margin-top:9px;"><div class="cht">Identify the first Acquia Source wave</div><div class="chb">Source is the cleanest cross-sell in the book with no baggage and no prior pricing history. I'll build the initial target list using internal tools and AI to help map content and digital operations fit across the book. This becomes the team's primary outbound focus in days 31–60 and ties directly into the rooms of the house and prospecting exercises.</div></div>
+      </div>
+      <div id="pp2" class="pp">
+        <div class="cl cl-t"><div class="clt">Systematic outbound with the right tools behind it</div><div class="clb">This is when pipeline creation becomes a team habit. I've done the audit and now I install the motions including structured outbound, a prospecting practice, relationship and onsite cadence and the Acquia Source campaign running as a coordinated team initiative.</div></div>
+        <div class="bl">Outbound and prospecting motions</div>
+        <div class="g2">
+          <div class="cb"><div class="cht">Acquia Source coordinated team campaign</div><div class="chb">I'll take the Source target list from days 1–30 and run a team campaign with research-backed account briefs, personalized email sequences per rep and a shared objection-handling doc built with Maggie S. Weekly check-in on conversion. This is our primary new pipeline source this quarter.</div></div>
+          <div class="cb"><div class="cht">New stakeholder prospecting exercise</div><div class="chb">Every rep maps 3–5 stakeholders in their top 10 accounts who they don't currently have a relationship with. Internal tools help research each person's priorities and inform a personalized first-touch message. This runs as a monthly cadence from here forward.</div></div>
+          <div class="cb"><div class="cht">Champion-led warm introductions</div><div class="chb">I'll coach every rep to identify their most satisfied internal champion per account and ask them for an introduction to a new team, executive or peer. This is the highest-conversion prospecting play in an existing account base and most reps have never done it systematically.</div></div>
+          <div class="cb"><div class="cht">Relationship and onsite cadence</div><div class="chb">Targeting 1–2 meaningful onsites per rep per quarter. The emphasis is on quality and intentionality with reps arriving with deep knowledge of the customer's business priorities, not just a product update. That depth is what turns a vendor visit into a trusted partner conversation.</div></div>
+        </div>
+        <div class="bl">Value capture as a pipeline tool</div>
+        <div class="g2">
+          <div class="ca"><div class="cht">Document wins and customer outcomes</div><div class="chb">After every meaningful customer milestone the AM documents the outcome: what the customer was trying to achieve, what Acquia enabled and what the measurable result was. Internal tools and AI help draft this from call notes and CRM activity but the rep owns the story and the relationship behind it.</div></div>
+          <div class="ca"><div class="cht">Win stories as prospecting assets</div><div class="chb">Documented win stories become the most credible outreach tool a rep has. Sharing a relevant win from a comparable team creates immediate credibility with a new stakeholder. I'll work with Maggie S to package the best stories for broader use across the team and in marketing materials.</div></div>
+        </div>
+        <div class="bl">AM/RM joint pipeline plays</div>
+        <div class="g2">
+          <div class="cd"><div class="cht">Renewal timing as an expansion trigger</div><div class="chb">I'll work with the RM team to identify renewals 90–120 days out. For each one the AM and RM co-develop a strategy. The 70/30 model means we win more together and I'll build that habit now.</div></div>
+          <div class="cd"><div class="cht">Multi-year positioning</div><div class="chb">For accounts renewing in the next 6 months I'll coach AMs to expand the business case before the RM leads the renewal conversation. Internal tools help build the ROI and future-state narrative per account.</div></div>
+        </div>
+        <div class="bl">Marketing-assisted pipeline</div>
+        <div class="g2">
+          <div class="cd"><div class="cht">Joint play with Maggie S</div><div class="chb">By week 6 I'll have the first co-built initiative in motion including targeted nurture sequences, a customer event or webinar tied to post-Engage messaging or an Acquia Source launch story for existing accounts.</div></div>
+          <div class="cd"><div class="cht">Win stories as pipeline content</div><div class="chb">I'll work with Maggie S to package our best customer win stories into outreach-ready content. A rep sharing a relevant customer story in a prospecting email converts at a significantly higher rate than a generic pitch.</div></div>
+        </div>
+      </div>
+      <div id="pp3" class="pp">
+        <div class="cl cl-t"><div class="clt">Engage announcements created the opening. Now we convert it into pipeline.</div><div class="clb">The biggest pipeline opportunity of this quarter is capitalizing on Engage momentum in the weeks that follow. Every announcement, every customer signal and every relationship deepened around the conference becomes pipeline if the team follows up with intention, speed and genuine value for the customer.</div></div>
+        <div class="bl">Post-Engage pipeline plays</div>
+        <div class="g2">
+          <div class="cb"><div class="cht">Thought leadership follow-up, not just a recap email</div><div class="chb">Every AM reaches out to their top 5 accounts with something genuinely useful: a key AI announcement relevant to their business, a market trend from Engage or a product direction that affects their roadmap. Framed as a thought leader sharing insight, not a rep doing routine follow-up.</div></div>
+          <div class="cb"><div class="cht">Personalized follow-up at scale</div><div class="chb">I'll have a follow-up approach built for the team around the AI-driven seller support announcement including a one-pager per account on what it means for their specific use case and a calendar invite for a deeper conversation. Internal tools help reps personalize efficiently without sacrificing quality.</div></div>
+          <div class="cb"><div class="cht">Exec relationships into scheduled next steps</div><div class="chb">For big bet accounts where exec relationships were built or deepened around Engage I'll follow up immediately to schedule a formal next conversation before the momentum fades. Internal tools help draft a context-setting brief that gives each contact a clear reason for the follow-up.</div></div>
+          <div class="cb"><div class="cht">Prospecting and pipeline hygiene continue</div><div class="chb">The monthly prospecting cadence, stakeholder mapping exercises and pipeline audit rhythm don't pause in month three. They're habits by now. The only thing that changes is the conversation starter which is even stronger because there's a genuine Engage story to lead with.</div></div>
+        </div>
+        <div class="bl">Metrics I'll track across all three phases</div>
+        <div class="g2">
+          <div class="cd"><div class="cht">Activity metrics (leading indicators)</div><div class="chb">New opps created per rep per week · Prospecting touches per rep per month · Champion intro requests made · Win stories documented · Onsites completed · AM/RM joint account plans active · Post-Engage outreach sent within one week</div></div>
+          <div class="cd"><div class="cht">Pipeline metrics (lagging indicators)</div><div class="chb">Pipeline coverage ratio versus quota (target 3–4x) · Stage progression rate · Source pipeline as % of total · Multi-year opportunities in pipeline · New rep pipeline contribution by month · Engage-attributed pipeline created</div></div>
+        </div>
+      </div>
+    </div>
+    <div class="ft"><span class="fn">Lauren Mazzola</span><span class="fl">Pipegen Strategy</span></div>
+  </div>
+</div>
+
+<!-- AI PLAYBOOK -->
+<div id="ai" class="pg">
+  <div class="sp">
+    <div class="sh teal"><div class="sey">AI and tools workflow</div><div class="stl">My AI and tools playbook for manager and team</div><div class="sds">I use AI and internal tools every day as infrastructure, not as a crutch. From morning prioritization to EBR building to win story documentation, the right tools let me and my team operate at a level of preparation and personalization that creates a real edge. Here's exactly how I use them and how I'll roll them out across the team.</div></div>
+    <div class="sb">
+      <div class="cl cl-p"><div class="clt"><span class="tg tg-p">My rollout approach</span> Model it first, then make it a team habit</div><div class="clb">I'll start using AI and internal tools visibly in my own workflow from day one and let the team see the value in action before I introduce them formally. By week five I'll run a show-and-tell: here's how I use these tools, here's what they save me and here's one thing I want each of you to try this week. By day 90 every rep has 3–4 consistent habits.</div></div>
+      <div class="bl">How I use AI and tools in my own workflow in days 1–30</div>
+      <div class="g2">
+        <div class="cp"><div class="cht">Morning email and calendar prioritization</div><div class="chb">Every morning I use AI to get a prioritized summary including what needs a response today, what's time-sensitive and what can wait. During a transition period when everything feels urgent this keeps me focused on what actually matters most.</div></div>
+        <div class="cp"><div class="cht">1:1 and leadership meeting prep</div><div class="chb">Before every rep 1:1 or leadership meeting I use notes and internal tools to build a structured prep brief showing where things left off, what to follow up on and one observation to lead with. Consistent preparation makes every conversation more valuable.</div></div>
+        <div class="cp"><div class="cht">Forecast narrative prep</div><div class="chb">Before every forecast call I structure my narrative including the number, confidence level, key deals driving it, risk deals to watch and what I need from leadership. Internal tools help organize this clearly. A clean, well-structured forecast story builds credibility with a new leadership team fast.</div></div>
+        <div class="cp"><div class="cht">Internal risk documents</div><div class="chb">For any at-risk account or deal I draft a structured risk brief with account background, identified risks, potential risks and mitigation plan. AI helps organize and draft this quickly. I present these proactively to D'Arcy before they surface in a QBR.</div></div>
+        <div class="cp"><div class="cht">Coaching plan drafting</div><div class="chb">After synthesizing 1:1 notes and call observations I use internal tools and AI to help organize a structured coaching plan with strengths, development areas, specific actions and timeline. This brings consistent quality across 8–9 coaching plans without losing a weekend to writing them.</div></div>
+        <div class="cp"><div class="cht">EBR and QBR building</div><div class="chb">Internal tools help assemble the narrative structure starting with business outcomes achieved, moving to value delivered and usage data and then pivoting to future roadmap and expansion. I provide the raw thinking and context and the tools help structure and organize it.</div></div>
+      </div>
+      <div class="bl">Rolling these tools out to the team starting week 5</div>
+      <div class="g2">
+        <div class="cp"><div class="cht">Pre-call company research briefs</div><div class="chb">Before any discovery call or onsite: company news, financial health, known tech stack, industry trends and likely business priorities. Internal research tools make it possible for reps to arrive as genuinely informed advisors. The single biggest lever for consultative selling.</div></div>
+        <div class="cp"><div class="cht">Compete play prep</div><div class="chb">Pull up the known competitor and use case and use internal tools to get competitor strengths, likely objections and the Acquia differentiation narrative. Especially valuable where a competitor is circling because of Rule-of-X pricing history.</div></div>
+        <div class="cp"><div class="cht">Prospecting message drafting</div><div class="chb">Using research tools to understand a stakeholder's role and likely priorities, reps can build a personalized first-touch message that leads with something relevant to them rather than a product pitch. This dramatically improves response rates for reps new to proactive outreach.</div></div>
+        <div class="cp"><div class="cht">Win story documentation</div><div class="chb">After a significant customer win, internal tools and AI help draft a structured win story from call notes and CRM activity: the customer's goal, what Acquia enabled and the measurable result. Turns a conversation into a reusable prospecting asset in minutes but the rep owns the relationship behind it.</div></div>
+        <div class="cp"><div class="cht">Email drafting and follow-ups</div><div class="chb">Use AI to draft and refine follow-up emails after customer conversations. Give it the context and desired next step, it drafts and the rep makes it their own. Cuts drafting time and improves quality especially for newer reps still developing their written voice.</div></div>
+        <div class="cp"><div class="cht">Onsite and conference logistics pages</div><div class="chb">For every scheduled onsite or customer meeting: one URL with agenda, attendee bios, location details, key talking points and account context. Customers notice the prep. It signals the rep has invested in understanding their world.</div></div>
+      </div>
+      <div class="bl">Roll-out timeline</div>
+      <div class="g2">
+        <div class="cd"><div class="cht">Days 1–30 (manager only)</div><div class="chb">Morning prioritization, meeting prep, forecast narrative, 1:1 notes and risk doc drafting. I model it visibly before asking anything of the team.</div></div>
+        <div class="cd"><div class="cht">Week 5 team session</div><div class="chb">Show-and-tell format with live demos of 3–4 use cases. One tool habit assigned per rep to try before the next team meeting.</div></div>
+        <div class="cd"><div class="cht">Days 31–60 (reps)</div><div class="chb">Call research briefs, compete prep, prospecting message drafting, win story documentation and EBR structure. Reinforced in every 1:1.</div></div>
+        <div class="cd"><div class="cht">Days 61–90 (full activation)</div><div class="chb">Onsite logistics, account plan financial research, post-Engage thought leadership outreach and win stories as pipeline content. Every rep has 3–4 habits running consistently by day 90.</div></div>
+      </div>
+    </div>
+    <div class="ft"><span class="fn">Lauren Mazzola</span><span class="fl">AI and Tools Playbook</span></div>
+  </div>
+</div>
+
+<!-- BIG BET ACCOUNTS -->
+<div id="bigbet" class="pg">
+  <div class="sp">
+    <div class="sh teal"><div class="sey">Strategic account planning</div><div class="stl">My big bet account framework</div><div class="sds">This is a structured, living account plan framework I'll introduce to the team for high-priority accounts where the stakes are high enough to warrant a cross-functional, milestone-driven approach. It's not a document that gets filled out and forgotten. It's a working tool that keeps everyone aligned, surfaces gaps before they kill a deal and ensures nothing falls through the cracks between now and close.</div></div>
+    <div class="sb">
+      <div class="cl cl-p"><div class="clt"><span class="tg tg-p">What this framework is and why it matters</span></div><div class="clb">The big bet account plan is designed to make reps go through every critical activity required to drive a large, complex deal across the finish line. It forces cross-functional thinking by involving the right Acquia stakeholders, mapping the right customer contacts and ensuring competitive, technical, financial and relationship gaps are all actively addressed. Internal tools and AI help reps research and populate the plan but the rep owns every relationship and conversation behind it. Below is what this document looks like in practice. I'll show D'Arcy this framework directly and speak to how I plan to roll it out with the team.</div></div>
+      <div class="bl">Account plan milestone tracker</div>
+      <table class="bb-table">
+        <thead><tr>
+          <th style="width:22%;">Milestone</th>
+          <th style="width:28%;">Description and actions</th>
+          <th style="width:10%;">Owner(s)</th>
+          <th style="width:10%;">Status</th>
+          <th style="width:10%;">Target date</th>
+          <th style="width:20%;">Next actions / blockers</th>
+        </tr></thead>
+        <tbody>
+          <tr><td colspan="6" class="bb-sect">Outcomes and value</td></tr>
+          <tr><td>Document outcomes</td><td class="desc">Document outcomes the customer is partnering with Acquia to achieve: increase revenue, decrease cost, mitigate risk. In the customer's own words.</td><td></td><td><span class="st st-x">To do</span></td><td></td><td></td></tr>
+          <tr><td>Document use cases</td><td class="desc">Document established use case(s) for each team. Capture and document quotes re: why Acquia, specific business value and metrics. Include in regular upward communication to customer.</td><td></td><td><span class="st st-x">To do</span></td><td></td><td></td></tr>
+          <tr><td>Value ($) received</td><td class="desc">Document business value received and ROI for each team and/or use case. Build joint value plan and business value assessment.</td><td></td><td><span class="st st-x">To do</span></td><td></td><td></td></tr>
+          <tr><td>Customer reporting cadence</td><td class="desc">Establish regular format, cadence and recipients for upward communication of progress and value received. Include consumption reporting against entitlements. Ideal audience: EB, procurement, finance.</td><td></td><td><span class="st st-x">To do</span></td><td></td><td></td></tr>
+          <tr><td colspan="6" class="bb-sect">Stakeholder and executive mapping</td></tr>
+          <tr><td>Customer exec mapping</td><td class="desc">Complete and document org chart/mapping exercise noting users, champions, coaches, economic buyers and detractors. Identify key executives who care or should care about Acquia and why.</td><td></td><td><span class="st st-x">To do</span></td><td></td><td></td></tr>
+          <tr><td>Acquia exec sponsor</td><td class="desc">Identify and assign an Acquia executive sponsor. Debrief on account health and goals. Facilitate introductions and agree on ongoing cadence. Ensure you have a cadence with the Acquia exec in advance of their meetings with the customer exec.</td><td></td><td><span class="st st-x">To do</span></td><td></td><td></td></tr>
+          <tr><td>Additional Acquia executives</td><td class="desc">Identify and assign any additional Acquia executives who should be involved, who they should be aligned to and what their cadence looks like. Facilitate introductions.</td><td></td><td><span class="st st-x">To do</span></td><td></td><td></td></tr>
+          <tr><td colspan="6" class="bb-sect">Technical and competitive landscape</td></tr>
+          <tr><td>Tech landscape</td><td class="desc">Document the account's technical landscape including key systems, vendors, etc. Think: SFDC, SAP, Snowflake, GCP, Qualtrics. Internal tools and AI help surface signals from job postings and public sources.</td><td></td><td><span class="st st-x">To do</span></td><td></td><td></td></tr>
+          <tr><td>Competition</td><td class="desc">Identify and document known and potential competition including use cases, spend, renewal dates, champions and risk. Includes do nothing and build internally. Document competitive takedown strategy.</td><td></td><td><span class="st st-x">To do</span></td><td></td><td></td></tr>
+          <tr><td colspan="6" class="bb-sect">Growth and expansion</td></tr>
+          <tr><td>Unfulfilled demand and greenspace</td><td class="desc">Document account greenspace, value hypothesis, rooms of the house not yet activated, exec sponsor for expansion and potential spend. Use greenspace mapping to identify the next logical expansion play.</td><td></td><td><span class="st st-x">To do</span></td><td></td><td></td></tr>
+          <tr><td>OKR and company initiatives</td><td class="desc">Identify and document company-level initiatives Acquia is or could align to. Determine initiative ownership: who at the customer wins or loses if this initiative succeeds. Document how a broader Acquia deployment supports it.</td><td></td><td><span class="st st-x">To do</span></td><td></td><td></td></tr>
+          <tr><td>Pricing strategy</td><td class="desc">Document existing pricing models. Determine strategy: centralized ELA vs. decentralized. Align with RM on multi-year opportunity and renewal timing.</td><td></td><td><span class="st st-x">To do</span></td><td></td><td></td></tr>
+          <tr><td colspan="6" class="bb-sect">Ongoing enablement and account management</td></tr>
+          <tr><td>Enablement cadence</td><td class="desc">Schedule consistent user days, partner with customer to develop Acquia CoE workshops, establish office hours with agenda shared in advance and strategically aligned to account needs. QBRs on a defined cadence.</td><td></td><td><span class="st st-x">To do</span></td><td></td><td></td></tr>
+          <tr><td colspan="6" class="bb-sect">Risk</td></tr>
+          <tr><td>Identified risk(s)</td><td class="desc">Document all known risks to the account, expansion opportunity or deal. Be specific.</td><td></td><td><span class="st st-x">To do</span></td><td></td><td></td></tr>
+          <tr><td>Potential risk(s)</td><td class="desc">Document risks that could emerge based on account dynamics, competitive landscape, stakeholder changes or product gaps.</td><td></td><td><span class="st st-x">To do</span></td><td></td><td></td></tr>
+          <tr><td>Mitigation plan(s)</td><td class="desc">For each identified and potential risk, document the mitigation strategy, owner and target resolution date. Escalate proactively where needed.</td><td></td><td><span class="st st-x">To do</span></td><td></td><td></td></tr>
+        </tbody>
+      </table>
+      <div class="bl">How I'll introduce this to the team</div>
+      <div class="g2">
+        <div class="ca"><div class="cht">Days 31–45: pilot with 1–2 reps</div><div class="chb">Build the plan together in a working session. Use internal tools live for the research sections. Collaborative, not a form to fill out.</div></div>
+        <div class="ca"><div class="cht">Days 45–60: expand to top 5 accounts</div><div class="chb">Share the pilot as a here's what done looks like example. Each rep identifies their own big bet account and starts building.</div></div>
+        <div class="ca"><div class="cht">Day 90 QBR: big bet as centerpiece</div><div class="chb">Present 2–3 completed plans to D'Arcy and SVP. The visible signal that the team operates as trusted advisors.</div></div>
+        <div class="ca"><div class="cht">Ongoing: always a living document</div><div class="chb">Updated after every significant customer interaction. The rep who keeps this current always has something intelligent to say about their account.</div></div>
+      </div>
+    </div>
+    <div class="ft"><span class="fn">Lauren Mazzola</span><span class="fl">Big Bet Account Framework</span></div>
+  </div>
+</div>
+
+<!-- SUPPORT -->
+<div id="support" class="pg">
+  <div class="sp">
+    <div class="sh teal"><div class="sey">What I need</div><div class="stl">Support needed and key asks</div><div class="sds">I believe asking for what I need explicitly and early is a sign of strategic self-awareness, not weakness. Here's what I'm asking for from each key stakeholder to set this plan up for success from day one.</div></div>
+    <div class="sb">
+      <div class="bl">From Maura — my most time-sensitive asks</div>
+      <div class="cl cl-g"><div class="clt">These expire when Maura leaves. I'll prioritize them in weeks one and two.</div><div class="clb">Maura's overlap is a rare asset most new managers never get. I intend to use every day of it intentionally.</div></div>
+      <div>
+        <div class="ar"><span class="tg tg-g">Maura</span><span>Full rep relationship intelligence including what drives each person, what derails them, how they receive feedback and each rep's RM relationship quality. Paired with a CRM walkthrough of every deal she's watching.</span></div>
+        <div class="ar"><span class="tg tg-g">Maura</span><span>An honest account risk map covering the accounts that look healthy in Salesforce but aren't including political sensitivities, exec relationship fragility and Rule-of-X pricing hangover. I want to write this down together before she leaves.</span></div>
+        <div class="ar"><span class="tg tg-g">Maura</span><span>Her full operating cadence documented including meeting formats, 1:1 structure, pipeline review approach and how she handles underperformance conversations.</span></div>
+        <div class="ar"><span class="tg tg-g">Maura</span><span>How she operates upward including how she runs forecast calls, communicates with the SVP and what she always prepares before a leadership meeting.</span></div>
+        <div class="ar"><span class="tg tg-g">Maura</span><span>The chance to shadow her in any remaining leadership meetings or forecast calls before she leaves.</span></div>
+        <div class="ar"><span class="tg tg-g">Maura</span><span>Warm introductions to every key stakeholder and a public endorsement to the team in the final co-run meeting.</span></div>
+      </div>
+      <div class="bl">From D'Arcy</div>
+      <div>
+        <div class="ar"><span class="tg tg-t">D'Arcy</span><span>A debrief after every leadership meeting in my first 30 days covering what landed, what didn't and what to do differently.</span></div>
+        <div class="ar"><span class="tg tg-t">D'Arcy</span><span>A full walk-through of every recurring leadership meeting format including the prep expected and how to communicate risk without unnecessarily alarming leadership.</span></div>
+        <div class="ar"><span class="tg tg-t">D'Arcy</span><span>Bi-weekly 1:1s for real management coaching, not status updates. Help roleplaying difficult conversations and navigating the peer-to-manager dynamic.</span></div>
+        <div class="ar"><span class="tg tg-t">D'Arcy</span><span>Candid feedback at 30 and 60 days specifically on what I need to change, not just what's going well.</span></div>
+        <div class="ar"><span class="tg tg-t">D'Arcy</span><span>Introductions to the new C-Suite and senior leaders with context on each person's priorities and communication style before I meet them.</span></div>
+      </div>
+      <div class="bl">A mentor</div>
+      <div class="cl cl-p"><div class="clt">I'd like to be connected with a mentor as I step into this role</div><div class="clb">Ideally someone who has navigated their own transition into management and understands the commercial side of the business. I'd commit to monthly check-ins and would come to every session with a specific challenge rather than a status update. I know what I don't know, and having a trusted sounding board outside my direct chain of command would make me a better manager faster.</div></div>
+      <div class="bl">From Maggie S and extended leadership</div>
+      <div>
+        <div class="ar"><span class="tg tg-a">Maggie S</span><span>A dedicated Acquia Source overview session for my regional team in the first two weeks.</span></div>
+        <div class="ar"><span class="tg tg-a">Maggie S</span><span>Updated competitive battlecards and objection-handling docs for Cloud, DAM and Source.</span></div>
+        <div class="ar"><span class="tg tg-a">Maggie S</span><span>One co-built account-level marketing play for our top 10–15 accounts including content, event invites or outreach sequences that warm accounts before my AMs call on them.</span></div>
+        <div class="ar"><span class="tg tg-a">Maggie S</span><span>Partnership on packaging our best customer win stories into outreach-ready content and a formal customer reference program. Win stories are a pipeline asset and I want marketing's help making them travel further than individual rep conversations.</span></div>
+        <div class="ar"><span class="tg tg-b">SVP</span><span>A full briefing on the Engage AI announcements and product positioning coming out of the conference so I can build rep talking tracks and account-level strategies from day one.</span></div>
+      </div>
+      <div class="bl">Cross-functional introductions</div>
+      <div class="cl cl-t"><div class="clt">I'd like formal introductions to peer leaders across each of these teams in my first two weeks</div><div class="clb">Building these relationships early before I need something from them is how I set my team up for faster deal cycles, better enablement and stronger customer outcomes.</div></div>
+      <div class="xg">
+        <div class="xc"><div class="xi">🎓</div><div><div class="xl">Enablement</div><div class="xs">Rep training, onboarding, skills programs</div></div></div>
+        <div class="xc"><div class="xi">📣</div><div><div class="xl">Marketing</div><div class="xs">Pipeline programs, campaigns, content</div></div></div>
+        <div class="xc"><div class="xi">📦</div><div><div class="xl">Product</div><div class="xs">Roadmap, AI announcements, post-Engage context</div></div></div>
+        <div class="xc"><div class="xi">🔄</div><div><div class="xl">Renewals</div><div class="xs">RM alignment, multi-year strategy, joint planning</div></div></div>
+        <div class="xc"><div class="xi">🤝</div><div><div class="xl">Customer Success</div><div class="xs">CSM handoffs, product adoption, account health</div></div></div>
+        <div class="xc"><div class="xi">🛠</div><div><div class="xl">Professional Services</div><div class="xs">Implementation, expansion scoping, delivery</div></div></div>
+        <div class="xc"><div class="xi">🆘</div><div><div class="xl">Support</div><div class="xs">Escalation paths, account risk signals, SLAs</div></div></div>
+      </div>
+      <div class="bl">Structural asks on day one</div>
+      <div class="g2">
+        <div class="cd"><div class="cht">CRM and data access</div><div class="chb">Full CRM access, pipeline dashboards and historical quota attainment data on day one, not week three. I can't manage what I can't see.</div></div>
+        <div class="cd"><div class="cht">Leadership calendar access</div><div class="chb">Access to all leadership meeting invites and the recurring forecast calendar. I need to know what's coming before it arrives.</div></div>
+        <div class="cd"><div class="cht">Deal escalation path</div><div class="chb">A clear map of who my AMs call when a deal is stuck, needs exec sponsorship or has a contract issue. I want this documented in week one.</div></div>
+        <div class="cd"><div class="cht">In-office and culture event opportunities</div><div class="chb">I'd like to understand what in-person team and culture events are available or planned. Being intentional about in-person time early builds trust and team identity faster than anything virtual.</div></div>
+        <div class="cd"><div class="cht">Team engagement and feedback data</div><div class="chb">Any recent pulse checks, engagement scores or feedback data. I want signal on where the team is before I make assumptions about morale or motivation.</div></div>
+        <div class="cd"><div class="cht">Management coaching resource</div><div class="chb">Attention from D'Arcy through regular check-ins, quick debriefs and candid feedback acting as structured support while navigating as a first-time manager. Knowing I have a direct line for real-time coaching makes all the difference.</div></div>
+      </div>
+    </div>
+    <div class="ft"><span class="fn">Lauren Mazzola</span><span class="fl">Support Needed and Key Asks</span></div>
+  </div>
+</div>
+
+<!-- CALENDAR -->
+<div id="cal" class="pg">
+  <div class="sp">
+    <div class="sh teal"><div class="sey">How I'll spend my time</div><div class="stl">My 3-month calendar</div><div class="sds">A realistic view of what my weeks look like to execute this plan well. Mondays and Fridays are protected for internal thinking, leadership prep and team work. Tuesday through Thursday are customer-facing. I've built in room for thinking time, learning, coffee chats and having a life outside of work.</div></div>
+    <div class="sb">
+      <div class="leg">
+        <div class="li"><div class="ld" style="background:#C8EDF5;border:1px solid #0E6F8E;"></div>Leadership and internal</div>
+        <div class="li"><div class="ld" style="background:#D6E8F7;border:1px solid #185FA5;"></div>Customer facing</div>
+        <div class="li"><div class="ld" style="background:#E8E6FD;border:1px solid #7F77DD;"></div>AI, tools and prep</div>
+        <div class="li"><div class="ld" style="background:#D4F0E4;border:1px solid #1D9E75;"></div>Coaching and 1:1s</div>
+        <div class="li"><div class="ld" style="background:#FDF0D0;border:1px solid #BA7517;"></div>Learning and enablement</div>
+        <div class="li"><div class="ld" style="background:#FCDFD5;border:1px solid #D85A30;"></div>Pipegen, prospecting and value capture</div>
+        <div class="li"><div class="ld" style="background:#FAE0EE;border:1px solid #C04070;"></div>Relationship and culture</div>
+        <div class="li"><div class="ld" style="background:#fff;border:0.5px solid #e8e7e0;"></div>White space / personal time</div>
+      </div>
+      <div class="mn">
+        <button class="mb active" onclick="showMo('m1',this)">Month 1 · Days 1–30</button>
+        <button class="mb" onclick="showMo('m2',this)">Month 2 · Days 31–60</button>
+        <button class="mb" onclick="showMo('m3',this)">Month 3 · Days 61–90</button>
+      </div>
+      <div id="m1" class="mo active">
+        <div style="font-size:12px;color:#5f5e5a;margin-bottom:10px;font-weight:500;">Typical week · Days 1–30 · Listen, learn, orient</div>
+        <div class="cg5">
+          <div class="dc2"><div class="dh dhm">Monday</div><div class="db">
+            <div class="bk2 bkp"><span class="bktm">8:00 am</span>Tools and AI morning brief · inbox and priority setting</div>
+            <div class="bk2 bkt"><span class="bktm">9:00 am</span>Team standup and weekly kickoff</div>
+            <div class="bk2 bkt"><span class="bktm">10:00 am</span>1:1 with D'Arcy · onboarding check-in</div>
+            <div class="bk2 bka"><span class="bktm">11:00 am</span>Product deep-dive · Cloud and DAM self-study</div>
+            <div class="bk2 bkgr"><span class="bktm">12:30 pm</span>Midday break</div>
+            <div class="bk2 bko"><span class="bktm">1:30 pm</span>CRM pipeline audit · review rep books</div>
+            <div class="bk2 bkt"><span class="bktm">3:00 pm</span>Shadow Maura · team pipeline review</div>
+            <div class="bk2 bkp"><span class="bktm">4:30 pm</span>Synthesize Maura meeting notes</div>
+          </div></div>
+          <div class="dc2"><div class="dh dht">Tuesday</div><div class="db">
+            <div class="bk2 bkp"><span class="bktm">8:00 am</span>Pre-call research prep · ride-along with rep</div>
+            <div class="bk2 bkg"><span class="bktm">9:00 am</span>Rep 1:1 · introductory conversation (rep 1)</div>
+            <div class="bk2 bkb"><span class="bktm">10:30 am</span>Customer ride-along · listen for pipeline signals</div>
+            <div class="bk2 bkgr"><span class="bktm">12:00 pm</span>Midday break</div>
+            <div class="bk2 bkg"><span class="bktm">1:00 pm</span>Rep 1:1 · introductory conversation (rep 2)</div>
+            <div class="bk2 bkb"><span class="bktm">2:30 pm</span>Customer ride-along · listen for expansion signals</div>
+            <div class="bk2 bkp"><span class="bktm">4:00 pm</span>Note synthesis · coaching themes and pipe intel log</div>
+          </div></div>
+          <div class="dc2"><div class="dh dhw">Wednesday</div><div class="db">
+            <div class="bk2 bkp"><span class="bktm">8:00 am</span>Morning brief and weekly prep</div>
+            <div class="bk2 bkn"><span class="bktm">9:00 am</span>Coffee chat · peer manager intro</div>
+            <div class="bk2 bkg"><span class="bktm">10:00 am</span>Rep 1:1 · introductory conversation (rep 3)</div>
+            <div class="bk2 bkt"><span class="bktm">11:00 am</span>Shadow Maura · 1:1 observe</div>
+            <div class="bk2 bkgr"><span class="bktm">12:30 pm</span>Midday break</div>
+            <div class="bk2 bkn"><span class="bktm">1:30 pm</span>Coffee chat · RM manager intro</div>
+            <div class="bk2 bka"><span class="bktm">2:30 pm</span>Acquia Source product overview session</div>
+            <div class="bk2 bkg"><span class="bktm">4:00 pm</span>Rep 1:1 · introductory conversation (rep 4)</div>
+          </div></div>
+          <div class="dc2"><div class="dh dhth">Thursday</div><div class="db">
+            <div class="bk2 bkp"><span class="bktm">8:00 am</span>Pre-call prep · research and context for ride-along</div>
+            <div class="bk2 bkb"><span class="bktm">9:00 am</span>Customer ride-along · new rep intro call</div>
+            <div class="bk2 bkn"><span class="bktm">10:30 am</span>Coffee chat · Maggie S intro</div>
+            <div class="bk2 bkg"><span class="bktm">11:30 am</span>Rep 1:1 · introductory conversation (rep 5)</div>
+            <div class="bk2 bkgr"><span class="bktm">12:30 pm</span>Midday break</div>
+            <div class="bk2 bkt"><span class="bktm">1:30 pm</span>Shadow Maura · leadership forecast call observe</div>
+            <div class="bk2 bka"><span class="bktm">3:00 pm</span>GTM and comp model self-study</div>
+            <div class="bk2 bkp"><span class="bktm">4:30 pm</span>Build personal what-changed brief</div>
+          </div></div>
+          <div class="dc2"><div class="dh dhf">Friday</div><div class="db">
+            <div class="bk2 bkt"><span class="bktm">8:30 am</span>Debrief with Maura · week recap and knowledge transfer</div>
+            <div class="bk2 bko"><span class="bktm">9:30 am</span>Pipegen thinking · whitespace map and Source target list</div>
+            <div class="bk2 bka"><span class="bktm">10:30 am</span>Leadership prep · SVP priorities and Engage briefing</div>
+            <div class="bk2 bkgr"><span class="bktm">12:00 pm</span>Midday break</div>
+            <div class="bk2 bkp"><span class="bktm">1:00 pm</span>Synthesize 1:1 notes into coaching theme log</div>
+            <div class="bk2 bkg"><span class="bktm">2:00 pm</span>New rep check-in · how's the week going</div>
+            <div class="bk2 bkgr"><span class="bktm">3:00 pm</span>Personal time · log off</div>
+          </div></div>
+        </div>
+        <div class="note-box"><strong style="color:#1a1a18;font-weight:600;">Month 1 focus:</strong> Every week in days 1–30 is about absorbing and orienting. Tuesday through Thursday are for customer calls and ride-alongs. Monday is for internal rhythm and leadership meetings. Friday is for thinking, synthesis and wrapping up with time left to breathe before the weekend.</div>
+      </div>
+      <div id="m2" class="mo">
+        <div style="font-size:12px;color:#5f5e5a;margin-bottom:10px;font-weight:500;">Typical week · Days 31–60 · Install, activate, build habits</div>
+        <div class="cg5">
+          <div class="dc2"><div class="dh dhm">Monday</div><div class="db">
+            <div class="bk2 bkp"><span class="bktm">8:00 am</span>Morning brief · weekly priorities</div>
+            <div class="bk2 bkt"><span class="bktm">9:00 am</span>Weekly team meeting · win of the week, coaching theme, win story share</div>
+            <div class="bk2 bkt"><span class="bktm">10:30 am</span>Leadership pipeline review · prep and attend</div>
+            <div class="bk2 bko"><span class="bktm">11:30 am</span>Pipegen and prospecting concept time · Source campaign and stakeholder mapping review</div>
+            <div class="bk2 bkgr"><span class="bktm">12:30 pm</span>Midday break</div>
+            <div class="bk2 bkt"><span class="bktm">1:30 pm</span>Forecast prep · structure narrative for leadership</div>
+            <div class="bk2 bkg"><span class="bktm">2:30 pm</span>1:1 with rep 1 · pipeline, coaching and prospecting check-in</div>
+            <div class="bk2 bkg"><span class="bktm">3:30 pm</span>1:1 with rep 2 · pipeline, coaching and win story review</div>
+          </div></div>
+          <div class="dc2"><div class="dh dht">Tuesday</div><div class="db">
+            <div class="bk2 bkp"><span class="bktm">8:00 am</span>Call prep · research brief and onsite logistics page</div>
+            <div class="bk2 bkb"><span class="bktm">9:30 am</span>Customer onsite with rep · discovery or EBR</div>
+            <div class="bk2 bkgr"><span class="bktm">12:00 pm</span>Midday break</div>
+            <div class="bk2 bkp"><span class="bktm">1:00 pm</span>Post-onsite debrief · notes, win story capture, follow-up draft</div>
+            <div class="bk2 bkb"><span class="bktm">2:30 pm</span>Customer call · Source cross-sell outreach follow-up</div>
+            <div class="bk2 bkg"><span class="bktm">4:00 pm</span>New rep coaching session · ramp check-in</div>
+          </div></div>
+          <div class="dc2"><div class="dh dhw">Wednesday</div><div class="db">
+            <div class="bk2 bkp"><span class="bktm">8:00 am</span>Morning brief and weekly prep</div>
+            <div class="bk2 bkt"><span class="bktm">9:00 am</span>AM/RM joint account review · top accounts</div>
+            <div class="bk2 bkb"><span class="bktm">10:30 am</span>Customer call · expansion conversation</div>
+            <div class="bk2 bkgr"><span class="bktm">12:00 pm</span>Midday break</div>
+            <div class="bk2 bka"><span class="bktm">1:00 pm</span>Team tools and AI training session · show-and-tell</div>
+            <div class="bk2 bkb"><span class="bktm">2:30 pm</span>Customer call · champion intro to new stakeholder</div>
+            <div class="bk2 bkg"><span class="bktm">4:00 pm</span>1:1 with rep 3 · pipeline and prospecting exercise review</div>
+          </div></div>
+          <div class="dc2"><div class="dh dhth">Thursday</div><div class="db">
+            <div class="bk2 bkp"><span class="bktm">8:00 am</span>Account research briefs for the day</div>
+            <div class="bk2 bkb"><span class="bktm">9:00 am</span>Customer onsite · consultative business review</div>
+            <div class="bk2 bkgr"><span class="bktm">12:00 pm</span>Midday break</div>
+            <div class="bk2 bkb"><span class="bktm">1:00 pm</span>Customer call · Source cross-sell conversation</div>
+            <div class="bk2 bkn"><span class="bktm">2:30 pm</span>Monthly mentor check-in</div>
+            <div class="bk2 bkg"><span class="bktm">3:30 pm</span>1:1 with rep 4 · pipeline and development</div>
+            <div class="bk2 bkp"><span class="bktm">4:30 pm</span>Draft coaching plans from this week's observations</div>
+          </div></div>
+          <div class="dc2"><div class="dh dhf">Friday</div><div class="db">
+            <div class="bk2 bkt"><span class="bktm">8:30 am</span>Leadership sync with D'Arcy · week debrief</div>
+            <div class="bk2 bko"><span class="bktm">9:30 am</span>Pipegen and value capture concept · account plans and win story review</div>
+            <div class="bk2 bka"><span class="bktm">10:30 am</span>Enablement · post-Engage AI messaging and product deep-dive</div>
+            <div class="bk2 bkgr"><span class="bktm">12:00 pm</span>Midday break</div>
+            <div class="bk2 bkp"><span class="bktm">1:00 pm</span>Weekly team performance summary and forecast narrative draft</div>
+            <div class="bk2 bkn"><span class="bktm">2:00 pm</span>Coffee chat · cross-functional relationship build</div>
+            <div class="bk2 bkgr"><span class="bktm">3:00 pm</span>Personal time · log off</div>
+          </div></div>
+        </div>
+        <div class="note-box"><strong style="color:#1a1a18;font-weight:600;">Month 2 focus:</strong> Tuesday through Thursday are fully customer-facing with onsites as the priority. The team tools session and first prospecting exercise happen this month. Mondays are for internal rhythm, forecast prep and 1:1s. Fridays are for thinking, leadership prep and cross-functional relationship building.</div>
+      </div>
+      <div id="m3" class="mo">
+        <div style="font-size:12px;color:#5f5e5a;margin-bottom:10px;font-weight:500;">Typical week · Days 61–90 · Accelerate, own, capitalize on Engage momentum</div>
+        <div class="cg5">
+          <div class="dc2"><div class="dh dhm">Monday</div><div class="db">
+            <div class="bk2 bkp"><span class="bktm">8:00 am</span>Morning brief · weekly priority setting</div>
+            <div class="bk2 bkt"><span class="bktm">9:00 am</span>Weekly team meeting · Engage learnings debrief and thought leadership brief</div>
+            <div class="bk2 bkt"><span class="bktm">10:00 am</span>Leadership forecast call · present team number</div>
+            <div class="bk2 bkt"><span class="bktm">11:00 am</span>QBR prep session with D'Arcy</div>
+            <div class="bk2 bkgr"><span class="bktm">12:30 pm</span>Midday break</div>
+            <div class="bk2 bko"><span class="bktm">1:30 pm</span>Pipegen and prospecting strategy · post-Engage follow-up review</div>
+            <div class="bk2 bkg"><span class="bktm">2:30 pm</span>1:1 with rep 5 · pipeline, coaching and win story status</div>
+            <div class="bk2 bkg"><span class="bktm">3:30 pm</span>New rep ramp review · is each on track</div>
+          </div></div>
+          <div class="dc2"><div class="dh dht">Tuesday</div><div class="db">
+            <div class="bk2 bkp"><span class="bktm">8:00 am</span>Thought leadership outreach drafts · personalized per account</div>
+            <div class="bk2 bkb"><span class="bktm">9:00 am</span>Customer call · post-Engage thought leadership follow-up</div>
+            <div class="bk2 bkb"><span class="bktm">10:30 am</span>Customer onsite · big bet account business review</div>
+            <div class="bk2 bkgr"><span class="bktm">12:00 pm</span>Midday break</div>
+            <div class="bk2 bkp"><span class="bktm">1:00 pm</span>Win story documentation from onsite</div>
+            <div class="bk2 bkb"><span class="bktm">2:30 pm</span>Customer call · exec relationship follow-up</div>
+            <div class="bk2 bkg"><span class="bktm">4:00 pm</span>1:1 with rep 6 · post-Engage pipeline and account plan review</div>
+          </div></div>
+          <div class="dc2"><div class="dh dhw">Wednesday</div><div class="db">
+            <div class="bk2 bkp"><span class="bktm">8:00 am</span>Morning brief and prep</div>
+            <div class="bk2 bkb"><span class="bktm">9:00 am</span>Customer call · Source expansion conversation</div>
+            <div class="bk2 bkt"><span class="bktm">10:00 am</span>AM/RM joint account review · renewal timing and growth plays</div>
+            <div class="bk2 bkgr"><span class="bktm">12:00 pm</span>Midday break</div>
+            <div class="bk2 bkb"><span class="bktm">1:00 pm</span>Customer onsite · post-Engage relationship deepening</div>
+            <div class="bk2 bka"><span class="bktm">3:30 pm</span>Team workshop · prospecting exercise and win story sharing</div>
+            <div class="bk2 bkp"><span class="bktm">4:30 pm</span>Post-onsite follow-up and win story capture</div>
+          </div></div>
+          <div class="dc2"><div class="dh dhth">Thursday</div><div class="db">
+            <div class="bk2 bkp"><span class="bktm">8:00 am</span>Account briefs and post-Engage strategy prep</div>
+            <div class="bk2 bkb"><span class="bktm">9:00 am</span>Customer onsite · big bet account exec visit</div>
+            <div class="bk2 bkgr"><span class="bktm">12:00 pm</span>Midday break</div>
+            <div class="bk2 bkt"><span class="bktm">1:00 pm</span>Risk document review · proactive brief to D'Arcy</div>
+            <div class="bk2 bkb"><span class="bktm">2:30 pm</span>Customer call · champion intro follow-up</div>
+            <div class="bk2 bkn"><span class="bktm">3:30 pm</span>Monthly mentor check-in</div>
+            <div class="bk2 bkg"><span class="bktm">4:30 pm</span>1:1 with new rep · ramp and confidence check</div>
+          </div></div>
+          <div class="dc2"><div class="dh dhf">Friday</div><div class="db">
+            <div class="bk2 bkt"><span class="bktm">8:30 am</span>D'Arcy 1:1 · QBR narrative review and 90-day debrief</div>
+            <div class="bk2 bko"><span class="bktm">9:30 am</span>Pipegen concept · Q2 strategy and post-Engage pipeline summary</div>
+            <div class="bk2 bkp"><span class="bktm">10:30 am</span>Build QBR report, coaching plans and 90-day summary</div>
+            <div class="bk2 bkgr"><span class="bktm">12:00 pm</span>Midday break</div>
+            <div class="bk2 bka"><span class="bktm">1:00 pm</span>Enablement · self-directed learning and leadership reading</div>
+            <div class="bk2 bkn"><span class="bktm">2:00 pm</span>Team culture touchpoint · check in on team energy</div>
+            <div class="bk2 bkgr"><span class="bktm">3:00 pm</span>Personal time · log off and recharge</div>
+          </div></div>
+        </div>
+        <div class="note-box"><strong style="color:#1a1a18;font-weight:600;">Month 3 focus:</strong> Everything points toward capitalizing on Engage momentum and converting it into pipeline. Customer meetings are dense Tuesday through Thursday. Mondays are for leadership, QBR prep and team debrief on Engage learnings. Fridays are for thinking, synthesis and protecting energy heading into the weekend.</div>
+      </div>
+    </div>
+    <div class="ft"><span class="fn">Lauren Mazzola</span><span class="fl">3-Month Calendar View</span></div>
+  </div>
+</div>
+
+<!-- WHY -->
+<div id="why" class="pg">
+  <div class="sp">
+    <div class="sh teal"><div class="sey">My motivation</div><div class="stl">Why I want this role</div><div class="sds">The plan matters. The preparation matters. But none of it means anything without the right reasons behind it. Here's mine, honest, personal and in my own words.</div></div>
+    <div class="sb">
+      <div class="wh">
+        <div class="whb" style="width:280px;height:280px;top:-90px;right:-50px;"></div>
+        <div class="whb" style="width:140px;height:140px;bottom:-35px;left:35px;"></div>
+        <div class="whl">The honest answer</div>
+        <div class="wht">I want to lead<br><span>because I'm built for it.</span></div>
+        <div class="whs">Not because it's the next title on a ladder. Because I genuinely love helping people get better, I think in systems and strategies, and I've spent years watching teams win and lose and developing the skills and strategies to continue to improve and understand what made the difference. This is the right moment, the right team and the right company to do this work.</div>
+      </div>
+      <div class="wg">
+        <div class="wc wc1"><span class="wci">📈</span><div class="wct">I want to be on a leadership track and I'm ready to invest in it seriously</div><div class="wcb">I've thought carefully about where I want my career to go and leadership is the clear answer. Not as an abstract goal but as something I want to build deliberately, starting here, with this team, learning from people I already respect and trust. I want to earn a seat at the table through results and I'm willing to put in the work to get there.</div></div>
+        <div class="wc wc2"><span class="wci">🤝</span><div class="wct">I learn best from leaders I already have real relationships with</div><div class="wcb">I know D'Arcy. I know how he leads. I've seen Vicki operate at a high level and I've carried that with me. There's something rare about stepping into a role where you trust the people above you and believe they'll invest in you the way you'll invest in your team. That matters to me more than a title or a comp bump.</div></div>
+        <div class="wc wc3"><span class="wci">🌱</span><div class="wct">Helping other people grow is where I do my best work</div><div class="wcb">I've always been the person other reps came to with questions, deal strategy or when they needed to think something through. That was never a burden. It was energizing. I genuinely want to see the people on my team succeed and I know that when they do, the numbers follow.</div></div>
+        <div class="wc wc4"><span class="wci">💡</span><div class="wct">I'm naturally creative and this role lets me build things</div><div class="wcb">I think differently about problems. I'm drawn to building systems, testing new approaches and finding creative ways to generate pipeline or develop people. A manager role lets me build plays, design the workflow, partner with marketing on campaigns and create something that outlasts any single quarter.</div></div>
+        <div class="wc wc5"><span class="wci">🔥</span><div class="wct">I'm coming back because I believe in what Acquia is building</div><div class="wcb">I left. I learned things somewhere else. And I'm choosing to come back because the product direction is more compelling than when I left, the leadership team is one I want to work with and the structure, the AM/RM model, the AI focus, the momentum coming out of Engage, feels like something I can genuinely help accelerate.</div></div>
+        <div class="wc wcd"><span class="wci">🐾</span><div class="wct">And most importantly, I'm doing this for Dooley</div><div class="wcb">Dooley is my one-year-old golden retriever and he's awesome and perfect. He really deserves a backyard where he can run around and be ridiculous and happy. That backyard is a goal. This role is part of getting there. If that's not a reason to bring your best every single day, I don't know what is.</div></div>
+      </div>
+      <div class="qb"><div class="qt">"I want to build something here. A team with a culture people are proud to be part of, a pipeline motion that becomes a model for how it's done and a reputation for developing people who go on to do great things. That's the work. I'm ready for it."</div><div class="qa">Lauren Mazzola</div></div>
+    </div>
+    <div class="ft"><span class="fn">Lauren Mazzola</span><span class="fl">Why I Want This Role</span></div>
+  </div>
+</div>
+
+</div>
+<script>
+function go(id,el){document.querySelectorAll('.pg').forEach(p=>p.classList.remove('active'));document.querySelectorAll('.nb').forEach(b=>b.classList.remove('active'));document.getElementById(id).classList.add('active');el.classList.add('active');}
+function showPP(id,el){document.querySelectorAll('.pp').forEach(p=>p.classList.remove('active'));document.querySelectorAll('.psb').forEach(b=>b.classList.remove('active'));document.getElementById(id).classList.add('active');el.classList.add('active');}
+function showMo(id,el){document.querySelectorAll('.mo').forEach(m=>m.classList.remove('active'));document.querySelectorAll('.mb').forEach(b=>b.classList.remove('active'));document.getElementById(id).classList.add('active');el.classList.add('active');}
+</script>
+</body>
+</html>
