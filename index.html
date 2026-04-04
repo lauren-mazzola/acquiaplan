@@ -114,24 +114,6 @@ body{font-family:'Inter',sans-serif;background:#f5f5f3;color:#1a1a18;}
 .mb.active{background:#0E6F8E;color:#fff;border-color:transparent;}
 .mb:hover:not(.active){background:#f1efe8;}
 .mo{display:none;}.mo.active{display:block;}
-.cg5{display:grid;grid-template-columns:repeat(5,1fr);gap:7px;margin-bottom:18px;}
-.dc2{background:#f5f5f3;border-radius:10px;overflow:hidden;}
-.dh{padding:7px 9px;font-size:10px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:#fff;text-align:center;}
-.dhm{background:#0E6F8E;}.dht{background:#185FA5;}.dhw{background:#185FA5;}.dhth{background:#185FA5;}.dhf{background:#0A4F6A;}
-.db{padding:5px;display:flex;flex-direction:column;gap:4px;min-height:360px;}
-.bk2{border-radius:6px;padding:5px 7px;font-size:10px;line-height:1.4;font-weight:500;}
-.bkt{background:#C8EDF5;color:#0A4F6A;}
-.bkb{background:#D6E8F7;color:#0A3A6A;}
-.bkp{background:#E8E6FD;color:#3A338A;}
-.bkg{background:#D4F0E4;color:#0A4A2A;}
-.bka{background:#FDF0D0;color:#6B3F00;}
-.bko{background:#FCDFD5;color:#7A2A10;}
-.bkn{background:#FAE0EE;color:#7A1848;}
-.bkgr{background:#fff;color:#5f5e5a;border:0.5px solid #e8e7e0;}
-.bktm{font-size:9px;font-weight:400;opacity:.65;display:block;margin-bottom:1px;}
-.leg{display:flex;flex-wrap:wrap;gap:7px;margin-bottom:18px;}
-.li{display:flex;align-items:center;gap:5px;font-size:11px;color:#5f5e5a;}
-.ld{width:10px;height:10px;border-radius:3px;flex-shrink:0;}
 .note-box{background:#f5f5f3;border-radius:10px;padding:13px 15px;font-size:12px;color:#5f5e5a;line-height:1.6;margin-top:14px;}
 .wh{background:linear-gradient(145deg,#0A4F6A 0%,#0E6F8E 50%,#1A9DB5 100%);border-radius:12px;padding:32px 38px;margin-bottom:22px;position:relative;overflow:hidden;}
 .whb{position:absolute;border-radius:50%;background:rgba(255,255,255,0.05);}
@@ -156,9 +138,6 @@ body{font-family:'Inter',sans-serif;background:#f5f5f3;color:#1a1a18;}
 .wc4 .wct{color:#6B3F00;}.wc4 .wcb{color:#7B4F00;}
 .wc5 .wct{color:#7A2A10;}.wc5 .wcb{color:#8A3A20;}
 .wcd .wct{color:#fff;font-size:15px;}.wcd .wcb{color:rgba(255,255,255,0.82);}.wcd .wci{font-size:32px;}
-.qb{background:#f5f5f3;border-radius:10px;border-left:3px solid #0E6F8E;padding:15px 18px;margin-top:18px;}
-.qt{font-size:14px;color:#1a1a18;line-height:1.7;font-style:italic;}
-.qa{font-size:11px;color:#5f5e5a;margin-top:7px;font-weight:500;}
 .cvr{background:linear-gradient(145deg,#0A4F6A 0%,#0E6F8E 45%,#1A9DB5 100%);border-radius:16px;padding:68px 60px 56px;min-height:500px;position:relative;overflow:hidden;margin:0 1rem;}
 .cbg{position:absolute;border-radius:50%;background:rgba(255,255,255,0.04);}
 .cey{font-size:11px;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:rgba(255,255,255,0.6);margin-bottom:18px;}
@@ -171,6 +150,26 @@ body{font-family:'Inter',sans-serif;background:#f5f5f3;color:#1a1a18;}
 .car{font-size:12px;color:rgba(255,255,255,0.6);}
 .ccs{display:flex;gap:7px;margin-top:28px;flex-wrap:wrap;}
 .cc{padding:5px 13px;border-radius:20px;background:rgba(255,255,255,0.12);border:1px solid rgba(255,255,255,0.2);font-size:11px;font-weight:500;color:rgba(255,255,255,0.85);}
+.cam-table{width:100%;border-collapse:collapse;font-size:11px;margin-bottom:18px;}
+.cam-table thead tr{background:#0E6F8E;}
+.cam-table thead th{color:#fff;font-weight:600;padding:9px 10px;text-align:left;font-size:10px;letter-spacing:.05em;text-transform:uppercase;}
+.cam-table thead th:first-child{border-radius:6px 0 0 0;}
+.cam-table thead th:last-child{border-radius:0 6px 0 0;}
+.cam-table tbody tr{border-bottom:0.5px solid #e8e7e0;}
+.cam-table tbody tr:last-child{border-bottom:none;}
+.cam-table tbody tr:hover{background:#fafaf8;}
+.cam-table td{padding:9px 10px;vertical-align:top;color:#1a1a18;line-height:1.5;}
+.cam-table td.angle{font-size:11px;color:#5f5e5a;line-height:1.55;}
+.cam-phase{font-size:10px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;padding:7px 10px;color:#fff !important;}
+.cam-phase-1{background:#0A4F6A;}
+.cam-phase-2{background:#185FA5;}
+.cam-phase-3{background:#0A6B4A;}
+.wk{font-weight:700;color:#0E6F8E;white-space:nowrap;}
+.prod-s{display:inline-block;font-size:10px;font-weight:600;padding:2px 8px;border-radius:20px;background:#7F77DD;color:#fff;white-space:nowrap;}
+.prod-d{display:inline-block;font-size:10px;font-weight:600;padding:2px 8px;border-radius:20px;background:#BA7517;color:#fff;white-space:nowrap;}
+.prod-c{display:inline-block;font-size:10px;font-weight:600;padding:2px 8px;border-radius:20px;background:#0E6F8E;color:#fff;white-space:nowrap;}
+.cam-table td.topic{font-weight:600;font-size:11px;color:#1a1a18;}
+.cam-table td.persona{font-size:11px;color:#5f5e5a;font-style:italic;}
 </style>
 </head>
 <body>
@@ -206,7 +205,7 @@ body{font-family:'Inter',sans-serif;background:#f5f5f3;color:#1a1a18;}
       <div class="cc">Prospecting within Existing Accounts</div>
       <div class="cc">Value Capture and Win Stories</div>
       <div class="cc">Big Bet Account Framework</div>
-      <div class="cc">Relationship &amp; Culture Building</div>
+      <div class="cc">Relationship and Culture Building</div>
     </div>
     <div class="cab">
       <div class="cav">LM</div>
@@ -291,9 +290,9 @@ body{font-family:'Inter',sans-serif;background:#f5f5f3;color:#1a1a18;}
         <div class="cb"><div class="cht">CRM pipeline audit per rep</div><div class="chb">I'll review every rep's open pipeline for stage accuracy, last activity date, documented next steps and realistic close dates. Internal tools help surface deals with no activity in 30 or more days. My first pipeline conversation with leadership will be grounded in a clean, honest number.</div></div>
       </div>
       <div class="bl">Identifying gaps — skills, process and enablement</div>
-      <div class="cl cl-t"><div class="clt"><span class="tg tg-t">Gap identification</span> I can't fix what I haven't seen yet — so I'll look carefully</div><div class="clb">In the first 30 days I'll be actively diagnosing where the gaps are across the team. Not to judge — to understand. Gaps in skills, gaps in process, gaps in product knowledge, gaps in how reps are using the tools available to them. Every ride-along, every 1:1 and every pipeline review is a data point. By the end of month one I'll have a clear picture of what needs attention and in what order.</div></div>
+      <div class="cl cl-t"><div class="clt"><span class="tg tg-t">Gap identification</span> I can't fix what I haven't seen yet, so I'll look carefully</div><div class="clb">In the first 30 days I'll be actively diagnosing where the gaps are across the team. Not to judge but to understand. Gaps in skills, gaps in process, gaps in product knowledge, gaps in how reps are using the tools available to them. Every ride-along, every 1:1 and every pipeline review is a data point. By the end of month one I'll have a clear picture of what needs attention and in what order.</div></div>
       <div class="g2">
-        <div class="ct"><div class="cht">Skills and coaching gaps per rep</div><div class="chb">Through 1:1s, call observations and ride-alongs I'll identify where each rep has room to grow — whether that's discovery skills, executive presence, pipeline hygiene, product knowledge or prospecting confidence. I'll document this per rep and use it to build individualized coaching plans in month two.</div></div>
+        <div class="ct"><div class="cht">Skills and coaching gaps per rep</div><div class="chb">Through 1:1s, call observations and ride-alongs I'll identify where each rep has room to grow whether that's discovery skills, executive presence, pipeline hygiene, product knowledge or prospecting confidence. I'll document this per rep and use it to build individualized coaching plans in month two.</div></div>
         <div class="ct"><div class="cht">Process and tool adoption gaps</div><div class="chb">I'll look at how consistently the team is using Salesforce, internal tools and any existing workflows. Where are things falling through the cracks? Where is manual work slowing reps down? Where are there inconsistencies in how the team executes? These gaps become the foundation of the process improvements I introduce in days 31–60.</div></div>
         <div class="ct"><div class="cht">Product and messaging knowledge gaps</div><div class="chb">Especially given the changes since I was last at Acquia — Source being entirely new, the CSM model shift, the post-Engage AI positioning — I'll assess how confident each rep is across the core product suite and messaging. I'll look for patterns: is this a team-wide gap or an individual one? That determines whether the fix is a team session or a targeted 1:1 coaching plan.</div></div>
         <div class="ct"><div class="cht">Enablement needs per rep and across the team</div><div class="chb">I'll map out where each rep needs enablement support: new reps who are still ramping, experienced reps who may have knowledge gaps from product changes and anyone who hasn't had consistent skills training. I'll bring these findings to D'Arcy and connect with the Enablement team in week two to understand what resources already exist and what needs to be built.</div></div>
@@ -304,9 +303,9 @@ body{font-family:'Inter',sans-serif;background:#f5f5f3;color:#1a1a18;}
         <div class="cd"><div class="cht">New reps (3)</div><div class="chb">I'll establish a weekly cadence immediately and be explicit: I'm going to be more hands-on with you as you ramp and that's intentional, not a red flag. A leadership transition is most destabilizing for the newest people on the team.</div></div>
       </div>
       <div class="bl">In-office culture — building relationships from week one</div>
-      <div class="cl cl-n"><div class="clt"><span class="tg tg-n">Weekly in-office day</span> Presence builds trust faster than anything else</div><div class="clb">I'll establish a consistent in-office day with the team each week. Showing up together in person — even once a week — creates the kind of informal relationship-building that no amount of Zoom calls can replicate. I'll use this time intentionally: quick standups, side conversations, spontaneous coaching moments and just being visible and accessible as the new leader of the team.</div></div>
+      <div class="cl cl-n"><div class="clt"><span class="tg tg-n">Weekly in-office day</span> Presence builds trust faster than anything else</div><div class="clb">I'll establish a consistent in-office day with the team each week. Showing up together in person even once a week creates the kind of informal relationship-building that no amount of Zoom calls can replicate. I'll use this time intentionally: quick standups, side conversations, spontaneous coaching moments and just being visible and accessible as the new leader of the team.</div></div>
       <div class="g2">
-        <div class="cn"><div class="cht">Team happy hour, lunch or activity in month one</div><div class="chb">Within the first 30 days I'll organize at least one team social event — a happy hour, a team lunch or a low-key group activity. This isn't just about morale. It's about giving people a chance to connect with me and with each other outside of pipeline reviews and 1:1s. A team that knows each other performs better and I want to set that tone early.</div></div>
+        <div class="cn"><div class="cht">Team happy hour, lunch or activity in month one</div><div class="chb">Within the first 30 days I'll organize at least one team social event whether that's a happy hour, a team lunch or a low-key group activity. This isn't just about morale. It's about giving people a chance to connect with me and with each other outside of pipeline reviews and 1:1s. A team that knows each other performs better and I want to set that tone early.</div></div>
         <div class="cn"><div class="cht">Create moments, not just meetings</div><div class="chb">The in-office day and team social aren't one-time gestures. They're the start of a rhythm. I want the team to associate coming into the office with energy, connection and momentum rather than obligation. That culture starts with how I show up and how I make it feel worth being there.</div></div>
       </div>
       <div class="cl cl-p" style="margin-top:14px;"><div class="clt"><span class="tg tg-p">AI and internal tools</span> I model it before I ask anything of the team</div><div class="clb">In week one I'll begin using AI and internal tools visibly in my own workflow including morning prioritization, 1:1 prep, leadership meeting prep and risk doc drafting. I'll let reps see it in action before I introduce it as a team motion. By week three I'll run a show-and-tell: here's how I use these tools and here's what they save me.</div></div>
@@ -330,7 +329,7 @@ body{font-family:'Inter',sans-serif;background:#f5f5f3;color:#1a1a18;}
         <div class="lr"><span class="dot dt"></span><span><strong style="font-weight:600;">Leadership meetings and forecast calls</strong> Running these solo now. I'll use internal tools to help structure my forecast narrative before each call including the number, confidence, key deals, risk and what I need from leadership.</span></div>
         <div class="lr"><span class="dot dt"></span><span><strong style="font-weight:600;">Monthly joint AM/RM account reviews</strong> Deliberate, strategic alignment rather than a check-in.</span></div>
         <div class="lr"><span class="dot dp"></span><span><strong style="font-weight:600;">Monthly mentor check-in</strong> I'll bring a specific management challenge to every session to get a perspective outside my direct chain of command.</span></div>
-        <div class="lr"><span class="dot da"></span><span><strong style="font-weight:600;">Ongoing enablement</strong> Regular sessions covering product updates, go-to-market strategy and cross-functional relationship building. Not a one-time event — a continuous investment in keeping the team sharp and connected.</span></div>
+        <div class="lr"><span class="dot da"></span><span><strong style="font-weight:600;">Ongoing enablement</strong> Regular sessions covering product updates, go-to-market strategy and cross-functional relationship building. Not a one-time event but a continuous investment in keeping the team sharp and connected.</span></div>
       </div>
       <div class="bl">Pipeline building motions I'll introduce this phase</div>
       <div class="g2">
@@ -362,7 +361,7 @@ body{font-family:'Inter',sans-serif;background:#f5f5f3;color:#1a1a18;}
         <div class="ct"><div class="cht">Process fixes rolled out</div><div class="chb">Any gaps I identified in Salesforce hygiene, tool adoption or workflow consistency get addressed this month through clear team norms and a short how-we-work guide. I'll introduce these in the team meeting so expectations are shared and visible, not just communicated one-off in individual 1:1s.</div></div>
       </div>
       <div class="bl">Team enablement — partnering with internal teams to build the program</div>
-      <div class="cl cl-a"><div class="clt"><span class="tg tg-a">Enablement series</span> Not a one-time training — a continuous investment in the team's growth</div><div class="clb">I'll partner with the Enablement team, Product Marketing and Product to build an ongoing enablement series for the regional AM team. The goal is to make sure every rep is sharp on product, messaging, competitive positioning and consultative selling skills — and stays that way as things continue to evolve. This is especially important given how much has changed since some of these reps were last fully enabled on the product suite.</div></div>
+      <div class="cl cl-a"><div class="clt"><span class="tg tg-a">Enablement series</span> Not a one-time training but a continuous investment in the team's growth</div><div class="clb">I'll partner with the Enablement team, Product Marketing and Product to build an ongoing enablement series for the regional AM team. The goal is to make sure every rep is sharp on product, messaging, competitive positioning and consultative selling skills and stays that way as things continue to evolve. This is especially important given how much has changed since some of these reps were last fully enabled on the product suite.</div></div>
       <div class="g2">
         <div class="ca"><div class="cht">Acquia Source deep-dive session</div><div class="chb">Partnering with Maggie S and the Product team to run a dedicated Source enablement session for the team. Reps need to be able to speak to Source with confidence before they can sell it. This becomes the foundation of the Source cross-sell campaign.</div></div>
         <div class="ca"><div class="cht">Post-Engage AI messaging workshop</div><div class="chb">With the AI-driven seller support announcement out in the market, I'll run a team session to ensure every rep can articulate the value clearly and confidently. Reps who sound uncertain about their own company's AI story lose credibility in front of customers. We'll fix that before they're in front of accounts.</div></div>
@@ -406,25 +405,23 @@ body{font-family:'Inter',sans-serif;background:#f5f5f3;color:#1a1a18;}
         <div class="ca"><div class="cht">Business acumen operationalized</div><div class="chb">Internal tools and AI help reps build the financial and competitive sections. Business acumen gets operationalized here, not just talked about in a coaching session.</div></div>
         <div class="ca"><div class="cht">Proactive risk briefs</div><div class="chb">For any at-risk big bet accounts I'll have a structured risk brief ready for leadership and will present it proactively to D'Arcy before it surfaces in a QBR.</div></div>
       </div>
-
       <div class="bl">Ongoing gap closure and team development</div>
-      <div class="cl cl-t"><div class="clt"><span class="tg tg-t">Continuous improvement</span> The gaps identified in month one don't close overnight — month three is about sustaining the progress</div><div class="clb">By now the individual coaching plans are in motion, the process fixes are in place and the enablement series has started. Month three is about reinforcing the progress, identifying anything new that's surfaced and making sure the work we started in month two becomes permanent habit rather than a temporary push.</div></div>
+      <div class="cl cl-t"><div class="clt"><span class="tg tg-t">Continuous improvement</span> The gaps identified in month one don't close overnight. Month three is about sustaining the progress.</div><div class="clb">By now the individual coaching plans are in motion, the process fixes are in place and the enablement series has started. Month three is about reinforcing the progress, identifying anything new that's surfaced and making sure the work we started in month two becomes permanent habit rather than a temporary push.</div></div>
       <div class="g2">
         <div class="ct"><div class="cht">Coaching plan progress reviews</div><div class="chb">I'll formally check in on every rep's coaching plan progress in month three. What's improved? What's still a gap? What needs a different approach? I'll share these updates with D'Arcy as part of the QBR-ready report so there's full transparency on individual development trajectories across the team.</div></div>
-        <div class="ct"><div class="cht">Identify any new gaps surfaced by Engage and market changes</div><div class="chb">Post-Engage often surfaces new knowledge or skill gaps as reps try to have conversations about announcements they aren't fully confident in yet. I'll listen for these in 1:1s and ride-alongs and address them quickly — either through a targeted team session or individual coaching — before they become a pattern.</div></div>
+        <div class="ct"><div class="cht">Identify any new gaps surfaced by Engage and market changes</div><div class="chb">Post-Engage often surfaces new knowledge or skill gaps as reps try to have conversations about announcements they aren't fully confident in yet. I'll listen for these in 1:1s and ride-alongs and address them quickly through a targeted team session or individual coaching before they become a pattern.</div></div>
       </div>
       <div class="bl">Team development and ongoing enablement series in partnership with internal teams</div>
-      <div class="cl cl-a"><div class="clt"><span class="tg tg-a">Enablement as a rhythm, not an event</span> The series I started in month two keeps running</div><div class="clb">I'll work with Enablement, Product Marketing and Product to keep the enablement cadence going beyond the initial sessions. The goal is a quarterly calendar of enablement topics aligned to what the team needs most — new product updates, evolving competitive landscape, messaging refreshes and skills development. This isn't something I run alone. It's a cross-functional effort where each team brings their expertise and I bring the AM context.</div></div>
+      <div class="cl cl-a"><div class="clt"><span class="tg tg-a">Enablement as a rhythm, not an event</span> The series I started in month two keeps running.</div><div class="clb">I'll work with Enablement, Product Marketing and Product to keep the enablement cadence going beyond the initial sessions. The goal is a quarterly calendar of enablement topics aligned to what the team needs most including new product updates, evolving competitive landscape, messaging refreshes and skills development. This isn't something I run alone. It's a cross-functional effort where each team brings their expertise and I bring the AM context.</div></div>
       <div class="g2">
-        <div class="ca"><div class="cht">AI and tools adoption check-in</div><div class="chb">By day 90 I'll assess which AI and tool habits have truly stuck across the team and which ones need reinforcement. I'll run a short team session to share wins — reps who have seen real results from the new habits — and use those as social proof to pull the laggards along. Peer examples land harder than manager mandates.</div></div>
+        <div class="ca"><div class="cht">AI and tools adoption check-in</div><div class="chb">By day 90 I'll assess which AI and tool habits have truly stuck across the team and which ones need reinforcement. I'll run a short team session to share wins from reps who have seen real results from the new habits and use those as social proof to pull the laggards along. Peer examples land harder than manager mandates.</div></div>
         <div class="ca"><div class="cht">Business acumen and consultative discovery</div><div class="chb">A team session on consultative discovery using real call recordings. The goal is reps who lead every conversation with the customer's business priorities before ever mentioning a product.</div></div>
         <div class="ca"><div class="cht">Product enablement — DAM, Cloud, Source</div><div class="chb">Dedicated enablement sessions per product to ensure every rep can speak confidently across the full Acquia suite. Partnering with Product and Product Marketing to keep this current as the roadmap evolves.</div></div>
-        <div class="ca"><div class="cht">Persona training</div><div class="chb">Building the team's ability to tailor messaging and discovery to the specific roles and priorities of the buyers they're engaging — from marketing ops to digital experience leaders to economic buyers.</div></div>
+        <div class="ca"><div class="cht">Persona training</div><div class="chb">Building the team's ability to tailor messaging and discovery to the specific roles and priorities of the buyers they're engaging from marketing ops to digital experience leaders to economic buyers.</div></div>
         <div class="ca"><div class="cht">Objection handling</div><div class="chb">A structured session on the most common objections across Cloud, DAM and Source including competitive objections, pricing pushback and do-nothing scenarios. Reps leave with practiced, confident responses.</div></div>
-        <div class="ca"><div class="cht">Sales methodology training</div><div class="chb">Reinforcing a shared methodology across the team so everyone is running deals the same way — with consistent qualification, discovery, and progression discipline that makes pipeline reviews and coaching conversations more productive.</div></div>
+        <div class="ca"><div class="cht">Sales methodology training</div><div class="chb">Reinforcing a shared methodology across the team so everyone is running deals the same way with consistent qualification, discovery and progression discipline that makes pipeline reviews and coaching conversations more productive.</div></div>
         <div class="ca"><div class="cht">New rep ramp review</div><div class="chb">Are all three new reps on track for pipeline by month 4–5? If not I'll define the intervention and have that conversation with D'Arcy proactively, not at month 5.</div></div>
         <div class="ca"><div class="cht">Stretch assignments</div><div class="chb">I'll identify 1–2 reps ready for a stretch including Engage thought leadership content, account planning leadership or peer coaching.</div></div>
-        <div class="ca"><div class="cht">Prospecting and business acumen workshop</div><div class="chb">A dedicated team workshop on consultative prospecting using real account data. Reps map untapped stakeholders, build their outreach live in the room and leave with messaging they can send that day. I'll partner with Enablement to build this into a repeatable format the team can run quarterly going forward.</div></div>
       </div>
       <div class="bl">90-day deliverable</div>
       <div class="ct"><div class="cht">QBR-ready report to SVP and D'Arcy</div><div class="chb">Pipeline created versus target, Acquia Source cross-sell funnel, Engage-driven pipeline generated, AM/RM joint deal count, new rep progress, big bet account plan completion rate, prospecting activity metrics, documented win stories produced and my top 3 coaching priorities for next quarter. Numbers and narrative.</div></div>
@@ -454,7 +451,7 @@ body{font-family:'Inter',sans-serif;background:#f5f5f3;color:#1a1a18;}
         </div>
         <div class="bl">Active pipeline moves in days 1–30</div>
         <div class="g2">
-          <div class="cd"><div class="cht">Ride-alongs as pipeline intel and gap diagnosis</div><div class="chb">I'll join 2–3 customer calls per rep in the first 30 days listening for pipeline signals including unmet needs, missing products and frustrations that could be cross-sell opportunities. At the same time I'll be observing each rep's skills — discovery quality, product confidence, consultative framing and how they handle objections. Internal tools help capture both pipeline signals and coaching observations after each call. Every ride-along serves two purposes: finding pipeline and mapping what each rep needs to grow.</div></div>
+          <div class="cd"><div class="cht">Ride-alongs as pipeline intel and gap diagnosis</div><div class="chb">I'll join 2–3 customer calls per rep in the first 30 days listening for pipeline signals including unmet needs, missing products and frustrations that could be cross-sell opportunities. At the same time I'll be observing each rep's skills including discovery quality, product confidence, consultative framing and how they handle objections. Internal tools help capture both pipeline signals and coaching observations after each call. Every ride-along serves two purposes: finding pipeline and mapping what each rep needs to grow.</div></div>
           <div class="cd"><div class="cht">Continue active pipegen campaigns</div><div class="chb">I'll review any existing outbound campaigns and prospecting motions already in flight and ensure they continue without disruption during the transition. Good pipeline momentum doesn't need a new manager to hit pause. It needs one who keeps pushing.</div></div>
         </div>
         <div class="cb" style="margin-top:9px;"><div class="cht">Identify the first Acquia Source wave</div><div class="chb">Source is the cleanest cross-sell in the book with no baggage and no prior pricing history. I'll build the initial target list using internal tools and AI to help map content and digital operations fit across the book. This becomes the team's primary outbound focus in days 31–60 and ties directly into the rooms of the house and prospecting exercises.</div></div>
@@ -501,6 +498,122 @@ body{font-family:'Inter',sans-serif;background:#f5f5f3;color:#1a1a18;}
       </div>
     </div>
     <div class="ft"><span class="fn">Lauren Mazzola</span><span class="fl">Pipegen Strategy</span></div>
+  </div>
+</div>
+
+<!-- CAMPAIGN CALENDAR -->
+<div id="cal" class="pg">
+  <div class="sp">
+    <div class="sh teal"><div class="sey">Pipeline campaign calendar</div><div class="stl">13-week pipegen campaign calendar</div><div class="sds">Rotating product, topic and persona each week. Each week has a clear product focus, a specific campaign angle and a target persona. The goal is to give reps a reason to reach out that feels timely, relevant and genuinely useful to the customer rather than a generic check-in. Campaigns alternate across Source, DAM and Cloud so the team is working all three motions simultaneously across the quarter.</div></div>
+    <div class="sb">
+      <table class="cam-table">
+        <thead><tr>
+          <th style="width:5%;">Week</th>
+          <th style="width:8%;">Product</th>
+          <th style="width:24%;">Campaign topic</th>
+          <th style="width:18%;">Target persona</th>
+          <th style="width:45%;">Outreach angle</th>
+        </tr></thead>
+        <tbody>
+          <tr><td colspan="5" class="cam-phase cam-phase-1" style="color:#fff;">Phase 1 · Weeks 1–4 · Plant the seeds</td></tr>
+          <tr>
+            <td class="wk">1</td>
+            <td><span class="prod-s">Source</span></td>
+            <td class="topic">Launch a microsite without your dev team. Campaign landing pages in days, not sprints.</td>
+            <td class="persona">VP / Director of Digital Marketing</td>
+            <td class="angle">Most marketing teams are waiting weeks for dev resources to build campaign pages. Share a win story from a comparable customer who shipped a microsite in record time using Source with no developer required.</td>
+          </tr>
+          <tr>
+            <td class="wk">2</td>
+            <td><span class="prod-d">DAM</span></td>
+            <td class="topic">Your brand assets are in five places. Consolidate and activate them from one.</td>
+            <td class="persona">Brand Manager / Creative Ops Lead</td>
+            <td class="angle">Brand teams waste hours hunting for the right version of assets across shared drives, email threads and agency portals. Position DAM as the single source of truth that speeds up campaign execution and brand compliance.</td>
+          </tr>
+          <tr>
+            <td class="wk">3</td>
+            <td><span class="prod-c">Cloud</span></td>
+            <td class="topic">Your Drupal site is growing. Is your infrastructure keeping up?</td>
+            <td class="persona">VP of Engineering / Director of Web Platform</td>
+            <td class="angle">As digital experience demands grow, engineering teams feel the pressure of scaling, uptime and security. Open a conversation around how Cloud Platform removes infrastructure burden and lets devs focus on building.</td>
+          </tr>
+          <tr>
+            <td class="wk">4</td>
+            <td><span class="prod-s">Source</span></td>
+            <td class="topic">DAM customers: your assets are ready. Now put them on a page your team can actually build.</td>
+            <td class="persona">Marketing Ops Manager (existing DAM users)</td>
+            <td class="angle">The easiest Source cross-sell in the book. Customers already storing assets in DAM are one step away from publishing them on pages built in Source. Frame this as closing the loop between asset management and web activation.</td>
+          </tr>
+          <tr><td colspan="5" class="cam-phase cam-phase-2" style="color:#fff;">Phase 2 · Weeks 5–8 · Build pipeline momentum</td></tr>
+          <tr>
+            <td class="wk">5</td>
+            <td><span class="prod-d">DAM</span></td>
+            <td class="topic">AI-powered asset tagging and search. Stop losing time finding what you already have.</td>
+            <td class="persona">Content Strategist / Digital Asset Manager</td>
+            <td class="angle">DAM's AI search and focal point cropping capabilities are a direct answer to the "we have thousands of assets but can't find anything" problem. Lead with the productivity angle — time saved per week is a metric they can feel.</td>
+          </tr>
+          <tr>
+            <td class="wk">6</td>
+            <td><span class="prod-c">Cloud</span></td>
+            <td class="topic">Multi-site management at scale. One codebase, many sites, zero chaos.</td>
+            <td class="persona">Director of Web Operations / IT Director</td>
+            <td class="angle">Organizations managing multiple Drupal properties are often running fragmented infrastructure. Cloud's multi-application architecture lets them standardize and simplify. Lead with a cost and complexity reduction story.</td>
+          </tr>
+          <tr>
+            <td class="wk">7</td>
+            <td><span class="prod-s">Source</span></td>
+            <td class="topic">Event and product launch pages. From brief to live before your next standup.</td>
+            <td class="persona">Demand Gen Manager / Campaign Manager</td>
+            <td class="angle">Demand gen teams under deadline pressure need to spin up event pages and product launch sites fast. Source removes the dev bottleneck entirely. Lead with speed-to-market and the ability to iterate without a ticket queue.</td>
+          </tr>
+          <tr>
+            <td class="wk">8</td>
+            <td><span class="prod-d">DAM</span></td>
+            <td class="topic">Distribute brand assets to agencies and partners without losing control.</td>
+            <td class="persona">Marketing Director / Agency Relationship Lead</td>
+            <td class="angle">Brands working with external agencies and partners struggle to ensure the right, approved assets are being used. DAM's distribution and permissions model solves this. Lead with brand protection and agency efficiency.</td>
+          </tr>
+          <tr><td colspan="5" class="cam-phase cam-phase-3" style="color:#fff;">Phase 3 · Weeks 9–13 · Capitalize on Engage and close</td></tr>
+          <tr>
+            <td class="wk">9</td>
+            <td><span class="prod-c">Cloud</span></td>
+            <td class="topic">Security and compliance on Drupal at enterprise scale. FedRAMP, uptime and peace of mind.</td>
+            <td class="persona">CISO / VP of IT Security</td>
+            <td class="angle">Security and compliance requirements are tightening across industries. Cloud Platform's FedRAMP authorization and enterprise security posture is a strong conversation opener with IT and security leaders who own platform decisions.</td>
+          </tr>
+          <tr>
+            <td class="wk">10</td>
+            <td><span class="prod-s">Source</span></td>
+            <td class="topic">Acquia AI and Source: personalize your web experience without a developer or a data scientist.</td>
+            <td class="persona">VP of Digital Experience / CMO</td>
+            <td class="angle">Post-Engage angle. Lead with Acquia's AI-first positioning and how Source and AI together enable marketers to build personalized web experiences at scale without engineering dependency. This is the Engage story made tangible.</td>
+          </tr>
+          <tr>
+            <td class="wk">11</td>
+            <td><span class="prod-d">DAM</span></td>
+            <td class="topic">Video asset management and AI-powered video creation. Content production at a new pace.</td>
+            <td class="persona">Content Director / Video Production Lead</td>
+            <td class="angle">Acquia's AI video creator capability in DAM is a strong new hook for content-heavy teams. Lead with the production efficiency story — creating and managing video assets from a single platform with AI doing the heavy lifting.</td>
+          </tr>
+          <tr>
+            <td class="wk">12</td>
+            <td><span class="prod-c">Cloud</span></td>
+            <td class="topic">Developer velocity. CI/CD, Cloud IDE and pipeline automation built for Drupal teams.</td>
+            <td class="persona">Engineering Manager / DevOps Lead</td>
+            <td class="angle">Engineering teams building on Drupal want to ship faster with fewer errors. Cloud's developer tooling including Code Studio, Cloud IDE and Pipelines is a direct answer. Lead with velocity and reduced deployment risk.</td>
+          </tr>
+          <tr>
+            <td class="wk">13</td>
+            <td><span class="prod-s">Source</span></td>
+            <td class="topic">Close the loop: DAM, Source and Cloud working together as the full Acquia stack.</td>
+            <td class="persona">SVP / C-Suite (existing multi-product customers)</td>
+            <td class="angle">For accounts using two of the three products, this is the full-platform story. Assets managed in DAM, published through Source, hosted and secured on Cloud. Lead with the compounding value of the integrated stack and make the business case for consolidation.</td>
+          </tr>
+        </tbody>
+      </table>
+      <div class="note-box"><strong style="color:#1a1a18;font-weight:600;">How to use this calendar:</strong> Each week's topic gives reps a specific, relevant reason to reach out rather than a generic check-in. Reps should pair the outreach angle with a customer win story where available, personalize the message using account research, and tie the conversation to something happening in the customer's business. The goal is a thought-leadership touchpoint that opens a real conversation, not a product pitch.</div>
+    </div>
+    <div class="ft"><span class="fn">Lauren Mazzola</span><span class="fl">13-Week Pipegen Campaign Calendar</span></div>
   </div>
 </div>
 
@@ -584,7 +697,7 @@ body{font-family:'Inter',sans-serif;background:#f5f5f3;color:#1a1a18;}
       <div class="bl">How I'll introduce this to the team</div>
       <div class="g2">
         <div class="ca"><div class="cht">Days 31–45: pilot with 1–2 reps</div><div class="chb">Build the plan together in a working session. Use internal tools live for the research sections. Collaborative, not a form to fill out.</div></div>
-        <div class="ca"><div class="cht">Days 45–60: expand to top 5 accounts</div><div class="chb">Share the pilot as a here's what done looks like example. Each rep identifies their own big bet account and starts building.</div></div>
+        <div class="ca"><div class="cht">Days 45–60: expand to top 5 accounts</div><div class="chb">Share the pilot as a "here's what done looks like" example. Each rep identifies their own big bet account and starts building.</div></div>
         <div class="ca"><div class="cht">Day 90 QBR: big bet as centerpiece</div><div class="chb">Present 2–3 completed plans to D'Arcy and SVP. The visible signal that the team operates as trusted advisors.</div></div>
         <div class="ca"><div class="cht">Ongoing: always a living document</div><div class="chb">Updated after every significant customer interaction. The rep who keeps this current always has something intelligent to say about their account.</div></div>
       </div>
@@ -648,144 +761,6 @@ body{font-family:'Inter',sans-serif;background:#f5f5f3;color:#1a1a18;}
       </div>
     </div>
     <div class="ft"><span class="fn">Lauren Mazzola</span><span class="fl">Support Needed and Key Asks</span></div>
-  </div>
-</div>
-
-<!-- CALENDAR -->
-<div id="cal" class="pg">
-  <div class="sp">
-    <div class="sh teal"><div class="sey">Pipeline campaign calendar</div><div class="stl">13-week pipegen campaign calendar</div><div class="sds">Rotating product, topic and persona each week. Each week has a clear product focus, a specific campaign angle and a target persona. The goal is to give reps a reason to reach out that feels timely, relevant and genuinely useful to the customer — not a generic check-in. Campaigns alternate across Source, DAM and Cloud so the team is working all three motions simultaneously across the quarter.</div></div>
-    <div class="sb">
-      <style>
-        .cam-table{width:100%;border-collapse:collapse;font-size:11px;margin-bottom:18px;}
-        .cam-table thead tr{background:#0E6F8E;}
-        .cam-table thead th{color:#fff;font-weight:600;padding:9px 10px;text-align:left;font-size:10px;letter-spacing:.05em;text-transform:uppercase;}
-        .cam-table thead th:first-child{border-radius:6px 0 0 0;}
-        .cam-table thead th:last-child{border-radius:0 6px 0 0;}
-        .cam-table tbody tr{border-bottom:0.5px solid #e8e7e0;}
-        .cam-table tbody tr:last-child{border-bottom:none;}
-        .cam-table tbody tr:hover{background:#fafaf8;}
-        .cam-table td{padding:9px 10px;vertical-align:top;color:#1a1a18;line-height:1.5;}
-        .cam-table td.angle{font-size:11px;color:#5f5e5a;line-height:1.55;}
-        .cam-phase{font-size:10px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;padding:7px 10px;color:#fff !important;}
-        .cam-phase-1{background:#0A4F6A;}
-        .cam-phase-2{background:#185FA5;}
-        .cam-phase-3{background:#0A6B4A;}
-        .wk{font-weight:700;color:#0E6F8E;white-space:nowrap;}
-        .prod-s{display:inline-block;font-size:10px;font-weight:600;padding:2px 8px;border-radius:20px;background:#7F77DD;color:#fff;white-space:nowrap;}
-        .prod-d{display:inline-block;font-size:10px;font-weight:600;padding:2px 8px;border-radius:20px;background:#BA7517;color:#fff;white-space:nowrap;}
-        .prod-c{display:inline-block;font-size:10px;font-weight:600;padding:2px 8px;border-radius:20px;background:#0E6F8E;color:#fff;white-space:nowrap;}
-        .cam-table td.topic{font-weight:600;font-size:11px;color:#1a1a18;}
-        .cam-table td.persona{font-size:11px;color:#5f5e5a;font-style:italic;}
-      </style>
-      <table class="cam-table">
-        <thead><tr>
-          <th style="width:5%;">Week</th>
-          <th style="width:8%;">Product</th>
-          <th style="width:24%;">Campaign topic</th>
-          <th style="width:18%;">Target persona</th>
-          <th style="width:45%;">Outreach angle</th>
-        </tr></thead>
-        <tbody>
-          <tr><td colspan="5" class="cam-phase cam-phase-1" style="color:#fff;">Phase 1 · Weeks 1–4 · Plant the seeds</td></tr>
-          <tr>
-            <td class="wk">1</td>
-            <td><span class="prod-s">Source</span></td>
-            <td class="topic">Launch a microsite without your dev team — campaign landing pages in days, not sprints</td>
-            <td class="persona">VP / Director of Digital Marketing</td>
-            <td class="angle">Most marketing teams are waiting weeks for dev resources to build campaign pages. Share a win story from a comparable customer who shipped a microsite in record time using Source — no developer required.</td>
-          </tr>
-          <tr>
-            <td class="wk">2</td>
-            <td><span class="prod-d">DAM</span></td>
-            <td class="topic">Your brand assets are in five places — consolidate and activate them from one</td>
-            <td class="persona">Brand Manager / Creative Ops Lead</td>
-            <td class="angle">Brand teams waste hours hunting for the right version of assets across shared drives, email threads and agency portals. Position DAM as the single source of truth that speeds up campaign execution and brand compliance.</td>
-          </tr>
-          <tr>
-            <td class="wk">3</td>
-            <td><span class="prod-c">Cloud</span></td>
-            <td class="topic">Your Drupal site is growing — is your infrastructure keeping up?</td>
-            <td class="persona">VP of Engineering / Director of Web Platform</td>
-            <td class="angle">As digital experience demands grow, engineering teams feel the pressure of scaling, uptime and security. Open a conversation around how Cloud Platform removes infrastructure burden and lets devs focus on building.</td>
-          </tr>
-          <tr>
-            <td class="wk">4</td>
-            <td><span class="prod-s">Source</span></td>
-            <td class="topic">DAM customers: your assets are ready — now put them on a page your team can actually build</td>
-            <td class="persona">Marketing Ops Manager (existing DAM users)</td>
-            <td class="angle">The easiest Source cross-sell in the book. Customers already storing assets in DAM are one step away from publishing them on pages built in Source. Frame this as closing the loop between asset management and web activation.</td>
-          </tr>
-          <tr><td colspan="5" class="cam-phase cam-phase-2" style="color:#fff;">Phase 2 · Weeks 5–8 · Build pipeline momentum</td></tr>
-          <tr>
-            <td class="wk">5</td>
-            <td><span class="prod-d">DAM</span></td>
-            <td class="topic">AI-powered asset tagging and search — stop losing time finding what you already have</td>
-            <td class="persona">Content Strategist / Digital Asset Manager</td>
-            <td class="angle">DAM's AI search and focal point cropping capabilities are a direct answer to the "we have thousands of assets but can't find anything" problem. Lead with the productivity angle — time saved per week is a metric they can feel.</td>
-          </tr>
-          <tr>
-            <td class="wk">6</td>
-            <td><span class="prod-c">Cloud</span></td>
-            <td class="topic">Multi-site management at scale — one codebase, many sites, zero chaos</td>
-            <td class="persona">Director of Web Operations / IT Director</td>
-            <td class="angle">Organizations managing multiple Drupal properties are often running fragmented infrastructure. Cloud's multi-application architecture lets them standardize and simplify. Lead with a cost and complexity reduction story.</td>
-          </tr>
-          <tr>
-            <td class="wk">7</td>
-            <td><span class="prod-s">Source</span></td>
-            <td class="topic">Event and product launch pages — from brief to live before your next standup</td>
-            <td class="persona">Demand Gen Manager / Campaign Manager</td>
-            <td class="angle">Demand gen teams under deadline pressure need to spin up event pages and product launch sites fast. Source removes the dev bottleneck entirely. Lead with speed-to-market and the ability to iterate without a ticket queue.</td>
-          </tr>
-          <tr>
-            <td class="wk">8</td>
-            <td><span class="prod-d">DAM</span></td>
-            <td class="topic">Distribute brand assets to agencies and partners without losing control</td>
-            <td class="persona">Marketing Director / Agency Relationship Lead</td>
-            <td class="angle">Brands working with external agencies and partners struggle to ensure the right, approved assets are being used. DAM's distribution and permissions model solves this. Lead with brand protection and agency efficiency.</td>
-          </tr>
-          <tr><td colspan="5" class="cam-phase cam-phase-3" style="color:#fff;">Phase 3 · Weeks 9–13 · Capitalize on Engage and close</td></tr>
-          <tr>
-            <td class="wk">9</td>
-            <td><span class="prod-c">Cloud</span></td>
-            <td class="topic">Security and compliance on Drupal at enterprise scale — FedRAMP, uptime, and peace of mind</td>
-            <td class="persona">CISO / VP of IT Security</td>
-            <td class="angle">Security and compliance requirements are tightening across industries. Cloud Platform's FedRAMP authorization and enterprise security posture is a strong conversation opener with IT and security leaders who own platform decisions.</td>
-          </tr>
-          <tr>
-            <td class="wk">10</td>
-            <td><span class="prod-s">Source</span></td>
-            <td class="topic">Acquia AI + Source: personalize your web experience without a developer or a data scientist</td>
-            <td class="persona">VP of Digital Experience / CMO</td>
-            <td class="angle">Post-Engage angle. Lead with Acquia's AI-first positioning and how Source + AI enables marketers to build personalized web experiences at scale without engineering dependency. This is the Engage story made tangible.</td>
-          </tr>
-          <tr>
-            <td class="wk">11</td>
-            <td><span class="prod-d">DAM</span></td>
-            <td class="topic">Video asset management and AI-powered video creation — content production at a new pace</td>
-            <td class="persona">Content Director / Video Production Lead</td>
-            <td class="angle">Acquia's AI video creator capability in DAM is a strong new hook for content-heavy teams. Lead with the production efficiency story — creating and managing video assets from a single platform with AI doing the heavy lifting.</td>
-          </tr>
-          <tr>
-            <td class="wk">12</td>
-            <td><span class="prod-c">Cloud</span></td>
-            <td class="topic">Developer velocity — CI/CD, Cloud IDE and pipeline automation built for Drupal teams</td>
-            <td class="persona">Engineering Manager / DevOps Lead</td>
-            <td class="angle">Engineering teams building on Drupal want to ship faster with fewer errors. Cloud's developer tooling — Code Studio, Cloud IDE, Pipelines — is a direct answer. Lead with velocity and reduced deployment risk.</td>
-          </tr>
-          <tr>
-            <td class="wk">13</td>
-            <td><span class="prod-s">Source</span></td>
-            <td class="topic">Close the loop: DAM + Source + Cloud — the full Acquia stack working together</td>
-            <td class="persona">SVP / C-Suite (existing multi-product customers)</td>
-            <td class="angle">For accounts using two of the three products, this is the full-platform story. Assets managed in DAM, published through Source, hosted and secured on Cloud. Lead with the compounding value of the integrated stack and make the business case for consolidation.</td>
-          </tr>
-        </tbody>
-      </table>
-      <div class="note-box"><strong style="color:#1a1a18;font-weight:600;">How to use this calendar:</strong> Each week's topic gives reps a specific, relevant reason to reach out — not a generic check-in. Reps should pair the outreach angle with a customer win story where available, personalize the message using account research, and tie the conversation to something happening in the customer's business. The goal is a thought-leadership touchpoint that opens a real conversation, not a product pitch.</div>
-    </div>
-    <div class="ft"><span class="fn">Lauren Mazzola</span><span class="fl">13-Week Pipegen Campaign Calendar</span></div>
   </div>
 </div>
 
